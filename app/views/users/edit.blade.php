@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
 
-    <form action="{{ URL::route('departments-update', $department->id ) }}" method="post">
+    <form action="{{ URL::route('users-update', $department->id ) }}" method="post">
 
         <div class="field">
             Tên: <input type="text" name="name" value="{{ $department->name }}">

@@ -103,6 +103,44 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'DepartmentController@destroy'
 		));
 
+
+
+
+	/* CAC ROUTE QUAN LI TAI KHOAN */
+	//hien danh sach phong ban
+	Route::get('/users',
+		array('as' => 'users-index',
+			'uses' => 'UserController@index'
+		));
+	//tao moi 1 phong ban
+	Route::get('/users/create',
+		array('as' => 'users-create',
+			'uses' => 'UserController@create'
+		));
+	//luu phong ban vao CSDL
+	Route::post('/users/store',
+		array('as' => 'users-store',
+			'uses' => 'UserController@store'
+		));
+
+	//chinh sua  phong ban
+	Route::get('/users/edit/{id}',
+		array('as' => 'users-edit',
+			'uses' => 'UserController@edit'
+		));
+
+	//chinh sua  phong ban
+	Route::post('/users/update/{id}',
+		array('as' => 'users-update',
+			'uses' => 'UserController@update'
+		));
+
+	//xoa phong ban
+	Route::get('/users/destroy/{id}',
+		array('as' => 'users-destroy',
+			'uses' => 'UserController@destroy'
+		));
+
 });
 
 

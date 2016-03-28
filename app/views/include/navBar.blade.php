@@ -1,7 +1,7 @@
 <div class="contain-to-grid">
 
 @if(Auth::check())
-	@if(Auth::user()->role)
+
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -17,17 +17,31 @@
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Link</a></li>
 
+				@if(Auth::user()->role == Config::get('user.role')["admin"] )
+
+					<ul class="nav navbar-nav">
+						<li><a href="{{ URL::route("departments-index") }}">Quản lí phòng ban</a></li>
+						<li><a href="{{ URL::route("users-index") }}">Thêm tài khoản</a></li>
 					</ul>
+
 					<form class="navbar-form navbar-left" role="search">
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Search">
 						</div>
 						<button type="submit" class="btn btn-default">Submit</button>
 					</form>
+
+
+				@elseif(Auth::user()->role == Config::get('user.role')["staff"] )
+					for staff
+				@elseif(Auth::user()->role == Config::get('user.role')["chef"])
+					for chef
+				@else
+					else
+				@endif
+
+
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="{{ URL::route("user-sign-out") }}">Đăng xuất</a></li>
 					</ul>

@@ -4,7 +4,9 @@
 	@include('include/head')
 </head>
 <body>
-		<div class="main">
+		@include('include/navBar')
+
+		<div class="row row-centered col-xs-8">
 			@yield('content')
 		</div>
 </body>
