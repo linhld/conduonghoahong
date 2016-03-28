@@ -19,7 +19,7 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Quản lí phòng ban</a></li>
+					<li><a href="{{ URL::route("departments-index") }}">Quản lí phòng ban</a></li>
 					<li><a href="#">Thêm tài khoản</a></li>
 				</ul>
 
@@ -36,5 +36,8 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 
-	fdsfdsfs
+
+	<div class="row row-centered col-xs-6">
+		@yield("department")
+	</div>
 @stop

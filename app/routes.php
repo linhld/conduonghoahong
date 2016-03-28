@@ -45,10 +45,13 @@ Route::group(array('before'=>'csrf'), function(){
 		array('as' => 'user-login-post',
 			'uses' => 'UserController@postLogin'
 	));
-		//Create new Sets
+
+
+
+	//Create new Sets
 	Route::post('/set/create',
-		array('as' => 'set-create-post',
-			'uses' => 'SetController@postCreate'
+		array('as' => 'department-create-post',
+			'uses' => 'DepartmentController@store'
 	));
 });
 
@@ -62,6 +65,43 @@ Route::group(array('before' => 'auth'), function() {
 		array('as' => 'user-sign-out',
 			'uses' => 'UserController@getSignOut'
 	));
+
+
+
+	/* CAC ROUTE QUAN LI PHONG BAN */
+	//hien danh sach phong ban
+	Route::get('/departments',
+		array('as' => 'departments-index',
+			'uses' => 'DepartmentController@index'
+		));
+	//tao moi 1 phong ban
+	Route::get('/departments/create',
+		array('as' => 'departments-create',
+			'uses' => 'DepartmentController@create'
+		));
+	//luu phong ban vao CSDL
+	Route::post('/departments/store',
+		array('as' => 'departments-store',
+			'uses' => 'DepartmentController@store'
+		));
+
+	//chinh sua  phong ban
+	Route::get('/departments/edit/{id}',
+		array('as' => 'departments-edit',
+			'uses' => 'DepartmentController@edit'
+		));
+
+	//chinh sua  phong ban
+	Route::post('/departments/update/{id}',
+		array('as' => 'departments-update',
+			'uses' => 'DepartmentController@update'
+		));
+
+	//xoa phong ban
+	Route::get('/departments/destroy/{id}',
+		array('as' => 'departments-destroy',
+			'uses' => 'DepartmentController@destroy'
+		));
 
 });
 
