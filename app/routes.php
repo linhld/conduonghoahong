@@ -62,27 +62,10 @@ Route::group(array('before' => 'auth'), function() {
 		array('as' => 'user-sign-out',
 			'uses' => 'UserController@getSignOut'
 	));
-	//Create new Sets
-	Route::get('/set/create',
-			array('as' => 'set-create',
-				'uses' => 'SetController@getCreate'
-	));
-
-	Route::post('/user/follow',
-			array('as' => 'user-follow',
-				'uses' => 'FollowController@ajaxFollow'
-	));
 
 });
 
-Route::get('/set/{setId}',
-	array('as' => 'set-view',
-		'uses' => 'SetController@viewSet'
-));
-	Route::get('/object/{objectId}',
-	array('as' => 'object-view',
-		'uses' => 'ObjectController@viewObject'
-	));
+
 /* Authenticated group */
 Route::group(array('before' => 'auth'), function() {
 	
@@ -91,76 +74,5 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'LearnController@startLearn'
 	));
 
-	Route::get('/learn/{objectId}/filterData',
-		array('as' => 'get-filter-data',
-			'uses' => 'LearnController@getFilterData'
-	));
 
-	Route::get('/set/{setId}/add',
-		array('as' => 'set-add',
-			'uses' => 'SetController@addSet'
-	));
-
-	Route::get('/set/{objectId}/addWord',
-		array('as' => 'word-add-get',
-			'uses' => 'WordController@getAdd'
-	));
-
-		Route::post('/set/{objectId}/addWord',
-			array('as' => 'word-add-post',
-				'uses' => 'WordController@postAdd'
-		));
-
-	Route::get('/set/{setId}/addObject',
-		array('as' => 'object-add-get',
-			'uses' => 'ObjectController@getAdd'
-	));
-
-		Route::post('/set/{setId}/addObject',
-			array('as' => 'object-add-post',
-				'uses' => 'ObjectController@postAdd'
-		));
-
-
-	Route::get('/learn/{objectId}/data',
-		array('as' => 'course-data',
-			'uses' => 'LearnController@getCourseData'
-	));
-
-		Route::get('/learn/{objectId}/truemcq',
-			array('as' => 'true-mcq',
-				'uses' => 'LearnController@trueMcq'
-		));
 });
-
-//ajax Filtered
-Route::post('/learn/{objectId}/filtered',
-			array('as' => 'learn-filtered',
-				'uses' => 'LearnController@ajaxFilter'
-	));
-
-Route::get('/user/{username}',
-	array('as' => 'view-profile',
-		'uses' => 'ProfileController@viewProfile'
-));
-	Route::get('/user/{username}/following',
-		array('as' => 'view-following-list',
-			'uses' => 'FollowController@viewFollowingList'
-	));
-
-//Push Array
-//array_push(var, value1,value2)
-//unset($arr);  
-/*
-
-		@foreach( $session[0] as  $key => $value)
-			<div class="layer row">
-				<div class="face1">
-					{{ $value["key"]}}
-				</div>
-				<div class="face2">
-					{{ $value["value"] }}
-				</div>
-			</div>
-		@endforeach
-*/

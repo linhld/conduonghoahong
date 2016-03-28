@@ -6,51 +6,32 @@ class HomeController extends BaseController {
 	| Default Home Controller
 	|--------------------------------------------------------------------------
 	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
+	| Controller nay dung de quan li trang Home cua cac user co role khac nhau
 	|
 	*/
-	/**
-	 * Create a new cache repository with the given implementation.
-	 *
-	 * @param  \Illuminate\Cache\StoreInterface  $store
-	 * @return \Illuminate\Cache\Repository
-	 */
+
 	public function home()
 	{
-
+		//neu user nay da dang nhap vao he thong
 		if(Auth::check())
-		{	
-			//get all set this user added
-			$data["setAdded"] = Auth::user()->addedSet;
+		{
+			switch(Auth::user()->role )
+			{
+				//Voi moi role thi hien thi View khac nhau
+				case Config::get("user.role")["admin"]:
+					return View::make('home.admin');
 
-			//$data["setLearned"] = SetCollection::whereRaw('user_id = ? and  learned = 1', array(Auth::id()))
-									//->get();
+				case Config::get("user.role")["staff"]:
+					return View::make('home.staff');
 
-			$data["learningObject"] = Auth::user()->learningObject;
+				case Config::get("user.role")["chef"]:
+					return View::make('home.chef');
 
-
-			$followingList = DB::table('follower')
-										->whereRaw('follow_id = ?', array(Auth::id()))
-										->lists('user_id');
-			//Default list is null
-			$data["activitiesList"] = null;
-			//If have Following more than one person, pull data to render
-			if($followingList != null)
-				$data["activitiesList"] = Activities::
-									whereIn('user_id',$followingList)
-									->orderBy('created_at','desc')
-									->get();
-			//$data["followingList"] = Activities::
-			//						whereIn('user_id',$followingList)
-			//						->get();
-
-			return View::make('home.auth',$data);
+				default:
+					return View::make('home.staff');
+			}
 		}
-
+		//con khong se return ve trang Dang nhap
 		return View::make('home.guest');
 	}
 

@@ -16,7 +16,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $table = 'users';
 	/* Alowing Eloquent to insert data into our database */
-	protected $fillable = array('email', 'username', 'password');
+	//protected $fillable = array('email', 'username', 'password');
 	//Guard Field to Insert data from array
 	protected $guarded = array('id', 'password');
 	/**
@@ -46,50 +46,4 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 					'password'	=> 'required'
 				);
 	}
-
-	public function follower()
-	{
-    	return $this->belongsToMany('User', 'follower', 'follow_id', 'user_id');
-	}
-
-	public function following()
-	{
-    	return $this->belongsToMany('User', 'follower', 'user_id', 'follow_id');
-	}
-
-	public function isFollowing($id)
-	{
-		return $this->following->contains($id);
-	}
-
-	public function hasFollower($id)
-	{
-		return $this->follower->contains($id);
-	}
-
-	public function addedSet()
-	{
-		return $this->belongsToMany('Set','setcollection');
-	}
-
-	public function addedObject()
-	{
-		return $this->belongsToMany('Object','objectcollection');
-	}
-
-	public function ownThisSet($id)
-	{
-		return $this->addedSet->contains($id);
-	}
-
-	public function ownThisObject($id)
-	{
-		return $this->addedObject->contains($id);
-	}
-
-	public function learningObject()
-	{
-		return $this->hasMany('ObjectCollection')->whereRaw('learned = 1');
-	}
-
 }
