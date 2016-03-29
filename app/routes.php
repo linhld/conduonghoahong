@@ -141,6 +141,27 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'UserController@destroy'
 		));
 
+
+
+
+	/* CAC ROUTE QUAN LI cong  van*/
+	//hien danh sach phong ban
+
+	Route::get('/document/document-create',
+		array('as' => 'document-create',
+			'uses' => 'DocumentController@create'
+		));
+
+	Route::get('/document/waiting-apply',
+		array('as' => 'document-waiting-apply',
+			'uses' => 'DocumentController@waiting_apply'
+		));
+
+	Route::get('/document/waiting-apply',
+		array('as' => 'document-has-ejected',
+			'uses' => 'DocumentController@has_ejected'
+		));
+
 });
 
 

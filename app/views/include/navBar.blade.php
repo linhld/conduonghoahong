@@ -31,10 +31,13 @@
 						</div>
 						<button type="submit" class="btn btn-default">Submit</button>
 					</form>
-
-
-				@elseif(Auth::user()->role == Config::get('user.role')["staff"] )
-					for staff
+						<!-- Menu danh cho van thu -->
+				@elseif(Auth::user()->role == Config::get('user.role')["writer"] )
+						<ul class="nav navbar-nav">
+							<li><a href="{{ URL::route("document-create") }}">Soạn công văn</a></li>
+							<li><a href="{{ URL::route("document-waiting-apply") }}">Công văn đang chờ duyệt</a></li>
+							<li><a href="{{ URL::route("document-has-ejected") }}">Công văn bị từ chối</a></li>
+						</ul>
 				@elseif(Auth::user()->role == Config::get('user.role')["chef"])
 					for chef
 				@else

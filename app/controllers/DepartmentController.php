@@ -1,6 +1,6 @@
 <?php
 
-class DepartmentController extends BaseController {
+class DocumentController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
