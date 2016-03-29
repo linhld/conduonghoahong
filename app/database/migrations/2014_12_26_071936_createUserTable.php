@@ -13,9 +13,11 @@ class CreateUserTable extends Migration {
 		Schema::create('users', function($table)
 		{
 			$table->increments('id');
+			$table->string('name',50);
 			$table->string('username',50);
 			$table->string('password', 100);
-			$table->integer('role');
+			$table->integer('role')->default(0);
+			$table->integer('department')->default(0);
 			//RememberToken dung de ghi nho thong tin
 			//Giup user lan sau vao co the dang nhap luon
 			$table->rememberToken();
@@ -26,6 +28,7 @@ class CreateUserTable extends Migration {
 		$user = new User();
 
 		$user->username = "admin";
+		$user->name = "admin";
 		$user->password = Hash::make("admin");
 		$user->role = Config::get("user.role")["admin"];
 

@@ -18,6 +18,12 @@ class CreateDepartMentTable extends Migration {
 			$table->timestamps();
 		});
 
+		//tao moi user Admin de quan li luc dau
+		$department = new Department();
+
+		$department->name = "Không có phòng ban";
+
+		$department->save();
 	}
 	/**
 	 * Reverse the migrations.

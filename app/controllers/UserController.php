@@ -35,11 +35,17 @@ class UserController extends BaseController {
 	 */
 	public function store()
 	{
-		//
-		$User = new User();
-		$User->name       = Input::get('name');
+		//luu thong tin user vao CSDL
+		$user = new User();
 
-		$User->save();
+		$user->name       	= Input::get('name');
+		$user->username    	= Input::get('username');
+		//ma hoa password lay tu Input truoc khi luu vao
+		$user->password    	= Hash::make( Input::get('password') );
+		$user->department	= Input::get('department');
+		$user->role			= Input::get('role');
+
+		$user->save();
 
 		return Redirect::route("users-index");
 	}
@@ -94,4 +100,63 @@ class UserController extends BaseController {
 		return Redirect::route("users-index");
 	}
 
+
+	//Get Login page
+	/**
+	 * Create a new cache repository with the given implementation.
+	 *
+	 * @param  \Illuminate\Cache\StoreInterface  $store
+	 * @return \Illuminate\Cache\Repository
+	 */
+	public function getLogin()
+	{
+		return View::make('user.login');
+	}
+	//Check user Login
+	/**
+	 * Create a new cache repository with the given implementation.
+	 *
+	 * @param  \Illuminate\Cache\StoreInterface  $store
+	 * @return \Illuminate\Cache\Repository
+	 */
+	public function postLogin()
+	{
+			// record
+			$dataAttempt = array(
+				'username' => Input::get('username'),
+				'password' => Input::get('password')
+			);
+
+			//attempt Login
+			$auth = Auth::attempt($dataAttempt,true);
+
+			if($auth)
+			{
+				// Redirect to the intented page
+				// For example, a user will be redirected to '/
+				// when the user tried to change password without login'
+				return Redirect::intended('/');
+			}
+			else
+			{
+				return Redirect::back()
+					->with('global', 'Tên đăng nhập hoặc mật khẩu không đúng.');
+			}
+
+			return Redirect::back()
+				->with('global', 'There is a problem.');
+	}
+
+	/**
+	 * Create a new cache repository with the given implementation.
+	 *
+	 * @param  \Illuminate\Cache\StoreInterface  $store
+	 * @return \Illuminate\Cache\Repository
+	 */
+	public function getSignOut()
+	{
+		Auth::logout();
+
+		return Redirect::route('home');
+	}
 }

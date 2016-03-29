@@ -43,6 +43,7 @@
 
 
 					<ul class="nav navbar-nav navbar-right">
+						<li><a>{{ Auth::user()->name  }}</a></li>
 						<li><a href="{{ URL::route("user-sign-out") }}">Đăng xuất</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
