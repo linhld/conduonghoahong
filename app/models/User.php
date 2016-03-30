@@ -27,6 +27,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	protected $hidden = array('password', 'remember_token');
 
+	public function get_department()
+	{
+		return $this->belongsTo("Department","department");
+	}
+
 	public static function registerValidator()
 	{
 		return array(
@@ -36,8 +41,6 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 					'password_again'=> 'required|same:password'
 				);
 	}
-
-	public static 
 
 	function loginValidator()
 	{

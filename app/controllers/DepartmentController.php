@@ -1,6 +1,6 @@
 <?php
 
-class DocumentController extends BaseController {
+class DepartmentController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -92,6 +92,25 @@ class DocumentController extends BaseController {
 		$department->delete();
 
 		return Redirect::route("departments-index");
+	}
+
+	//
+	public function get_staff()
+	{
+		//lay Id cua phong ban tu select box
+		$department_id = Input::get("department_id");
+
+		$department = Department::find($department_id);
+		//lay danh sach nhan vien cua phong ban nay
+		$staff_list = $department->get_staff_list()->get();
+
+		$html = "";
+		foreach( $staff_list as $staff)
+		{
+			$html .= "<option value=".$staff->id.">".$staff->name."</option>";
+		}
+
+		return $html;
 	}
 
 }

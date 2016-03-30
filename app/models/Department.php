@@ -11,4 +11,8 @@ class Department extends Eloquent {
 	 */
 	protected $table = 'departments';
 
+	public function get_staff_list()
+	{
+		return $this->hasMany('User','department','id');
+	}
 }

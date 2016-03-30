@@ -147,9 +147,15 @@ Route::group(array('before' => 'auth'), function() {
 	/* CAC ROUTE QUAN LI cong  van*/
 	//hien danh sach phong ban
 
+	//ROUTE QUAN LI CONG VAN DEN
 	Route::get('/document/document-create',
 		array('as' => 'document-create',
-			'uses' => 'DocumentController@create'
+			'uses' => 'DocumentController@create_receive'
+		));
+
+	Route::post('/document/document-store',
+		array('as' => 'document-store',
+			'uses' => 'DocumentController@store_receive'
 		));
 
 	Route::get('/document/waiting-apply',
@@ -162,7 +168,23 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'DocumentController@has_ejected'
 		));
 
+	//ROUTE QUAN LI CONG VAN DI
+	Route::get('/document/document-create-out',
+		array('as' => 'create-out-document',
+			'uses' => 'DocumentController@create_out_document'
+		));
+
+	Route::post('/document/store-out-document',
+		array('as' => 'store-out-document',
+			'uses' => 'DocumentController@store_out_document'
+		));
+
 });
+
+Route::post('/get_department_staff',
+	array('as' => 'get_department_staff',
+		'uses' => 'DepartmentController@get_staff'
+	));
 
 
 /* Authenticated group */
