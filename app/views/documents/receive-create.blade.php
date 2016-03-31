@@ -6,7 +6,7 @@
     <h3>SOẠN CÔNG VĂN ĐẾN</h3>
     <br>
     <br>
-    <form role="form" action="{{ URL::route('document-store') }}" method="post">
+    <form role="form" action="{{ URL::route('document-receive-store') }}" method="post">
         <div class="form-group">
             <label for="document_code">Số công văn:</label>
             <input type="text" name="document_code">

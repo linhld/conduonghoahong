@@ -147,36 +147,44 @@ Route::group(array('before' => 'auth'), function() {
 	/* CAC ROUTE QUAN LI cong  van*/
 	//hien danh sach phong ban
 
+
 	//ROUTE QUAN LI CONG VAN DEN
-	Route::get('/document/document-create',
-		array('as' => 'document-create',
-			'uses' => 'DocumentController@create_receive'
+	Route::get('/document/receive-create',
+		array('as' => 'document-receive-create',
+			'uses' => 'DocumentController@receive_create'
 		));
 
-	Route::post('/document/document-store',
-		array('as' => 'document-store',
-			'uses' => 'DocumentController@store_receive'
+	Route::post('/document/receive-store',
+		array('as' => 'document-receive-store',
+			'uses' => 'DocumentController@receive_store'
+		));
+	//danh sach cong van dang cho duyet
+	Route::get('/document/receive-waiting-apply',
+		array('as' => 'document-receive-waiting-apply',
+			'uses' => 'DocumentController@receive_waiting_apply'
+		));
+	//danh sach cac cong van bi tu choi
+	Route::get('/document/receive-ejected',
+		array('as' => 'document-receive-ejected',
+			'uses' => 'DocumentController@receive_ejected'
+		));
+	// danh cho giam doc thuc hien cac tac vu cho cong van den
+	Route::get('/document/action/{id}',
+		array('as' => 'document-action',
+			'uses' => 'DocumentController@receive_action'
 		));
 
-	Route::get('/document/waiting-apply',
-		array('as' => 'document-waiting-apply',
-			'uses' => 'DocumentController@waiting_apply'
-		));
 
-	Route::get('/document/waiting-apply',
-		array('as' => 'document-has-ejected',
-			'uses' => 'DocumentController@has_ejected'
-		));
 
 	//ROUTE QUAN LI CONG VAN DI
 	Route::get('/document/document-create-out',
-		array('as' => 'create-out-document',
-			'uses' => 'DocumentController@create_out_document'
+		array('as' => 'out-create-document',
+			'uses' => 'DocumentController@out_create'
 		));
 
 	Route::post('/document/store-out-document',
 		array('as' => 'store-out-document',
-			'uses' => 'DocumentController@store_out_document'
+			'uses' => 'DocumentController@out_store'
 		));
 
 });
