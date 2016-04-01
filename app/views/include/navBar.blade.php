@@ -18,37 +18,48 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-				@if(Auth::user()->role == Config::get('user.role')["admin"] )
+					<!-- lay role cua User đang đăng nhập -->
+					<?php $user_role 	= Auth::user()->role; 		?>
+					<!-- lay role cua mảng config role -->
+					<?php $config_role 	= Config::get('user.role'); ?>
 
-					<ul class="nav navbar-nav">
-						<li><a href="{{ URL::route("departments-index") }}">Quản lí phòng ban</a></li>
-						<li><a href="{{ URL::route("users-index") }}">Thêm tài khoản</a></li>
-					</ul>
-
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
-						<!-- Menu danh cho van thu -->
-				@elseif(Auth::user()->role == Config::get('user.role')["writer"] )
+					@if( $user_role == $config_role["admin"] )
+					<!-- Menu danh cho Admin -->
 						<ul class="nav navbar-nav">
-							<li><a href="{{ URL::route("document-receive-create") }}">Soạn CV đến</a></li>
-							<li><a href="{{ URL::route("document-receive-waiting-apply") }}">CV đến đang chờ duyệt</a></li>
-							<li><a href="{{ URL::route("document-receive-ejected") }}">CV đến bị từ chối</a></li>
-							<li><a href="{{ URL::route("document-receive-applied") }}">CV đã duyệt</a></li>
+							<li><a href="{{ URL::route("departments-index") }}">Quản lí phòng ban</a></li>
+							<li><a href="{{ URL::route("users-index") }}">Quản lí tài khoản</a></li>
 						</ul>
-				@elseif(Auth::user()->role == Config::get('user.role')["chef"])
-						<ul class="nav navbar-nav">
-							<li><a href="{{ URL::route("document-receive-create") }}">Soạn CV đi</a></li>
-							<li><a href="{{ URL::route("document-receive-waiting-apply") }}">CV đến đang chờ duyệt</a></li>
-							<li><a href="{{ URL::route("document-receive-ejected") }}">CV đến bị từ chối</a></li>
-						</ul>
-				@else
-					else
-				@endif
 
+
+					<!-- Menu danh cho van thu -->
+					@elseif( $user_role == $config_role["writer"] )
+							<ul class="nav navbar-nav">
+								<li><a href="{{ URL::route("document-receive-create") }}">Soạn CV đến</a></li>
+								<li><a href="{{ URL::route("document-receive-waiting-apply") }}">CV đến đang chờ duyệt</a></li>
+								<li><a href="{{ URL::route("document-receive-ejected") }}">CV đến bị từ chối</a></li>
+								<li><a href="{{ URL::route("document-receive-applied") }}">CV đã duyệt</a></li>
+							</ul>
+
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="tìm kiếm CV">
+								</div>
+								<button type="submit" class="btn btn-default">Tìm</button>
+							</form>
+
+					@elseif( $user_role == $config_role["chef"])
+							<ul class="nav navbar-nav">
+								<li><a href="{{ URL::route("document-receive-create") }}">Soạn CV đi</a></li>
+								<li><a href="{{ URL::route("document-receive-waiting-apply") }}">CV đến đang chờ duyệt</a></li>
+								<li><a href="{{ URL::route("document-receive-ejected") }}">CV đến bị từ chối</a></li>
+							</ul>
+					@elseif( $user_role == $config_role["staff"])
+							<ul class="nav navbar-nav">
+								<li><a href="{{ URL::route("document-receive-applied") }}">CV gửi cho bạn</a></li>
+							</ul>
+					@else
+						else
+					@endif
 
 					<ul class="nav navbar-nav navbar-right">
 						<li><a>{{ Auth::user()->name  }}</a></li>

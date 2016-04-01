@@ -12,7 +12,7 @@
 |*/
 
 
-
+//Trang chu cua website
 Route::get('/', 
 	array('as' => 'home', 
 		'uses' => 'HomeController@home'
@@ -47,12 +47,6 @@ Route::group(array('before'=>'csrf'), function(){
 	));
 
 
-
-	//Create new Sets
-	Route::post('/set/create',
-		array('as' => 'department-create-post',
-			'uses' => 'DepartmentController@store'
-	));
 });
 
 
@@ -91,7 +85,7 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'DepartmentController@edit'
 		));
 
-	//chinh sua  phong ban
+	//luu cac thong tin chinh sua phong ban vao CSDL
 	Route::post('/departments/update/{id}',
 		array('as' => 'departments-update',
 			'uses' => 'DepartmentController@update'
@@ -151,27 +145,56 @@ Route::group(array('before' => 'auth'), function() {
 	//ROUTE QUAN LI CONG VAN DEN
 	Route::get('/document/receive-create',
 		array('as' => 'document-receive-create',
-			'uses' => 'DocumentController@receive_create'
+			'uses' => 'ReceiveDocumentController@create'
 		));
 
 	Route::post('/document/receive-store',
 		array('as' => 'document-receive-store',
-			'uses' => 'DocumentController@receive_store'
+			'uses' => 'ReceiveDocumentController@store'
 		));
+
+	Route::get('/document/receive-edit/{id}',
+		array('as' => 'document-receive-edit',
+			'uses' => 'ReceiveDocumentController@edit'
+		));
+
+	Route::post('/document/receive-update/{id}',
+		array('as' => 'document-receive-update',
+			'uses' => 'ReceiveDocumentController@update'
+		));
+
+	Route::get('/document/receive-destroy/{id}',
+		array('as' => 'document-receive-destroy',
+			'uses' => 'ReceiveDocumentController@destroy'
+		));
+
 	//danh sach cong van dang cho duyet
 	Route::get('/document/receive-waiting-apply',
 		array('as' => 'document-receive-waiting-apply',
-			'uses' => 'DocumentController@receive_waiting_apply'
+			'uses' => 'ReceiveDocumentController@waiting_apply'
 		));
 	//danh sach cac cong van bi tu choi
 	Route::get('/document/receive-ejected',
 		array('as' => 'document-receive-ejected',
-			'uses' => 'DocumentController@receive_ejected'
+			'uses' => 'ReceiveDocumentController@ejected'
 		));
+
+	//danh sach cac cong van bi tu choi
+	Route::get('/document/receive-applied',
+		array('as' => 'document-receive-applied',
+			'uses' => 'ReceiveDocumentController@applied'
+		));
+
+	//danh sach cac cong van bi tu choi
+	Route::get('/document/receive-read-and-apply/{id}',
+		array('as' => 'document-receive-read-and-apply',
+			'uses' => 'ReceiveDocumentController@read_and_apply'
+		));
+
 	// danh cho giam doc thuc hien cac tac vu cho cong van den
 	Route::get('/document/action/{id}',
-		array('as' => 'document-action',
-			'uses' => 'DocumentController@receive_action'
+		array('as' => 'document-receive-action',
+			'uses' => 'ReceiveDocumentController@action'
 		));
 
 

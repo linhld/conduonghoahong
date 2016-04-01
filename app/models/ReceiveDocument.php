@@ -13,7 +13,7 @@ class ReceiveDocument extends Eloquent {
 
 	public static function get_waiting_apply_documents()
 	{
-		return self::where("status", Config::get('document.receive_status')["wait_apply"])->get();
+		return self::where("status", Config::get('document.receive_status')["waiting_apply"])->get();
 	}
 
 	public static function get_ejected_documents()
@@ -21,4 +21,13 @@ class ReceiveDocument extends Eloquent {
 		return self::where("status", Config::get('document.receive_status')["ejected"])->get();
 	}
 
+	public static function get_applied_documents()
+	{
+		return self::where("status", Config::get('document.receive_status')["applied"])->get();
+	}
+
+	public function get_name_of_type()
+	{
+		return DB::table('document_types')->whereId($this->document_type)->first()->name;
+	}
 }

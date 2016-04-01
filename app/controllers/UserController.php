@@ -110,7 +110,7 @@ class UserController extends BaseController {
 	 */
 	public function getLogin()
 	{
-		return View::make('user.login');
+		return View::make('home.guest');
 	}
 	//Check user Login
 	/**

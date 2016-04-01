@@ -24,6 +24,8 @@ class CreateReceiveDocumentTable extends Migration {
 
 			$table->integer('to_department')->default(0);
 			$table->integer('to_staff')->default(0);
+
+			$table->integer('document_type')->default(0);
 			//Tao truong created_at va update_at cho bang nay
 			$table->timestamps();
 		});

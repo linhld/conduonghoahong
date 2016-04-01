@@ -7,6 +7,16 @@
     <br>
     <br>
     <form role="form" action="{{ URL::route('document-receive-store') }}" method="post">
+
+        <div class="form-group">
+            <label 4for="document_type">Loại công văn:</label>
+            <select name="document_type" id="document_type">
+                @foreach( DB::table('document_types')->get() as $document_type )
+                    <option value="{{ $document_type->id }}">{{ $document_type->name }}</option>
+                @endforeach
+            </select>
+        </div>
+
         <div class="form-group">
             <label for="document_code">Số công văn:</label>
             <input type="text" name="document_code">
@@ -35,21 +45,6 @@
         <div class="form-group">
             <label for="title">Ngày nhận</label>
             <input type="date" name="time_receive">
-        </div>
-
-        <div class="form-group">
-            <label for="to_department">Đơn vị xử lí</label>
-            <select name="to_department" id="to_department">
-                @foreach( Department::all() as $department )
-                    <option value="{{ $department->id }}">{{ $department->name }}</option>
-                @endforeach
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="to_staff">Người xử lí</label>
-            <select name="to_staff" id="to_staff">
-            </select>
         </div>
 
         <div class="form-group">

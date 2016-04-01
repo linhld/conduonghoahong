@@ -8,7 +8,7 @@
         <tr>
             <td>Số công văn</td>
             <td>Tiêu đề</td>
-            <td>Sửa/ xóa</td>
+            <td>duyệt</td>
         </tr>
         </thead>
         <tbody>
@@ -28,12 +28,12 @@
                     <?php $user_role = Auth::user()->role; ?>
                             <!-- neu user la Van thu thi hien nut sut va  -->
                     @if( $user_role == Config::get("user.role")["writer"] )
-                        <a class="btn btn-small btn-info" href="{{ URL::route("departments-edit", $document->id) }}">Sửa</a>
-                        <a class="btn btn-small btn-danger" href="{{ URL::route("departments-destroy", $document->id ) }}">Xóa</a>
+                        <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-edit", $document->id) }}">Sửa</a>
+                        <a class="btn btn-small btn-danger" href="{{ URL::route("document-receive-destroy", $document->id ) }}">Xóa</a>
                         <!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
                     @elseif($user_role== Config::get("user.role")["chef"] )
-                        <a class="btn btn-small btn-info" href="{{ URL::route("document-action", $document->id) }}?action='apply'">Phê duyệt</a>
-                        <a class="btn btn-small btn-danger" href="{{ URL::route("document-action", $document->id ) }}?action='eject'">Từ chối</a>
+                        <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read-and-apply", $document->id) }}">Xem</a>
+                        <a class="btn btn-small btn-danger" href="{{ URL::route("document-receive-action", $document->id ) }}?action=eject">Từ chối</a>
                     @else
 
                     @endif
