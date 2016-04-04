@@ -15,4 +15,14 @@ class Department extends Eloquent {
 	{
 		return $this->hasMany('User','department','id');
 	}
+
+	public function get_receive_documents()
+	{
+		$documents = DocumentDepartment::where('department_id',$this->id)->lists('document_id');
+
+		if( !empty($documents) )
+		   return ReceiveDocument::whereIn('id',$documents)->get();
+
+		return array();
+	}
 }

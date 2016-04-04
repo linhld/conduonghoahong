@@ -24,11 +24,13 @@ class ReceiveDocumentController extends BaseController {
 		$receive_document->time_send 			= Input::get("time_send");
 		$receive_document->time_receive 		= Input::get("time_receive");
 		$receive_document->short_content 		= Input::get("short_content");
+		$receive_document->document_type 		= Input::get("document_type");
 		//Cap nhat trang thai cua no la dang cho xu li
 		$receive_document->status				= Config::get("document.receive_status")["waiting_apply"];
 		//luu cong van den
 		$receive_document->save();
 
+		Session::flash('global','Tạo Công văn thành công');
 		// load the view and pass the nerds
 		return Redirect::route('home');
 	}
@@ -68,7 +70,7 @@ class ReceiveDocumentController extends BaseController {
 	public function waiting_apply()
 	{
 		//
-		$data["documents"] = ReceiveDocument::get_documents('waiting-apply');
+		$data["documents"] = ReceiveDocument::get_documents('waiting_apply');
 
 		return View::make('receive_documents.waiting-apply', $data);
 	}
@@ -85,6 +87,17 @@ class ReceiveDocumentController extends BaseController {
 		return View::make('receive_documents.read-and-apply', $data);
 	}
 
+
+	//đọc công văn
+	//Tham số đầu vào: id của document được đọc
+	public function read($document_id)
+	{
+		//
+		$data["document"] = ReceiveDocument::find($document_id);
+
+		return View::make('receive_documents.staff-read', $data);
+	}
+
 	//thuc hien cac tac vu voi cong van den
 	public function action($document_id)
 	{
@@ -94,10 +107,27 @@ class ReceiveDocumentController extends BaseController {
 
 		switch($action){
 			case "apply":
+
 				//neu nhu status cua cong van nay la dang cho duyet thi moi thuc hien duyet cong van nay
 				if( $document->status == Config::get("document.receive_status")["waiting_apply"] )
 				{
-					echo "ok";
+					$to_departments = Input::get('to_department');
+
+
+					//Voi moi Department duoc chon trong checkbox, Tao them mot dong Trong bang Document Department
+					foreach($to_departments as $department_id)
+					{
+						//Tao them mot dong Trong bang Document Department
+						$document_department = new DocumentDepartment();
+
+						$document_department->document_id = $document_id;
+						$document_department->department_id = $department_id;
+
+						$document_department->save();
+					}
+
+					Session::flash('global','xét duyệt thành công');
+
 					$document->status = Config::get("document.receive_status")["applied"];
 					$document->save();
 				}
@@ -115,6 +145,8 @@ class ReceiveDocumentController extends BaseController {
 
 			break;
 		}
+
+		return Redirect::route('home');
 	}
 
 

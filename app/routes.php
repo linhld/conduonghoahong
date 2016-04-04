@@ -143,6 +143,12 @@ Route::group(array('before' => 'auth'), function() {
 
 
 	//ROUTE QUAN LI CONG VAN DEN
+	//danh sach cac cong van bi tu choi
+	Route::get('/document/receive-read/{id}',
+		array('as' => 'document-receive-read',
+			'uses' => 'ReceiveDocumentController@read'
+		));
+
 	Route::get('/document/receive-create',
 		array('as' => 'document-receive-create',
 			'uses' => 'ReceiveDocumentController@create'
@@ -192,7 +198,7 @@ Route::group(array('before' => 'auth'), function() {
 		));
 
 	// danh cho giam doc thuc hien cac tac vu cho cong van den
-	Route::get('/document/action/{id}',
+	Route::post('/document/action/{id}',
 		array('as' => 'document-receive-action',
 			'uses' => 'ReceiveDocumentController@action'
 		));
@@ -215,6 +221,12 @@ Route::group(array('before' => 'auth'), function() {
 	//TIM KIEM PHONG BAN
 	Route::get('/search/department',
 		array('as' => 'search-department',
+			'uses' => 'DepartmentController@search'
+		));
+
+	//TIM KIEM cong
+	Route::get('/search/document',
+		array('as' => 'search-document',
 			'uses' => 'DepartmentController@search'
 		));
 

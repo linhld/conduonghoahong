@@ -26,11 +26,16 @@
 
                     <!-- edit this nerd (uses the edit method found at GET /nerds/{id}/edit -->
                     <?php $user_role = Auth::user()->role; ?>
+                    <?php $config_role = Config::get("user.role"); ?>
                             <!-- neu user la Van thu thi hien nut sut va  -->
-                    @if( $user_role == Config::get("user.role")["writer"] )
-                        <a class="btn btn-small btn-info" href="{{ URL::route("departments-edit", $document->id) }}">Sửa</a>
-                        <a class="btn btn-small btn-danger" href="{{ URL::route("departments-destroy", $document->id ) }}">Xóa</a>
+                    @if( $user_role == $config_role["writer"] )
+                        <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-edit", $document->id) }}">Sửa</a>
+                        <a class="btn btn-small btn-danger" href="{{ URL::route("document-receive-destroy", $document->id ) }}">Xóa</a>
                         <!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
+                    @elseif($user_role == $config_role["staff"]  )
+                        <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">xem</a>
+                    @else
+
                     @endif
                 </td>
             </tr>

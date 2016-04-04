@@ -27,33 +27,19 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	protected $hidden = array('password', 'remember_token');
 
-	public function get_department()
+	public function departments()
 	{
 		return $this->belongsTo("Department","department");
 	}
 
 	public function get_receive_applies_document()
 	{
-		return $this->hasMany('ReceiveDocument','to_staff')
-					->where("status", Config::get('document.receive_status')['applied'])
-					->get();
+//		return $this->hasMany('ReceiveDocument','to_staff')
+//					->where("status", Config::get('document.receive_status')['applied'])
+//					->get();
+		return $this->departments->get_receive_documents();
+
 	}
 
-//	public static function registerValidator()
-//	{
-//		return array(
-//					'email' 		=> 'required|max:50|email|unique:users',
-//					'username'		=> 'required|alpha_dash|max:20|min:3|unique:users',
-//					'password'		=> 'required|min:6',
-//					'password_again'=> 'required|same:password'
-//				);
-//	}
-//
-//	function loginValidator()
-//	{
-//		return array(
-//					'username' 	=> 'required',
-//					'password'	=> 'required'
-//				);
-//	}
+
 }
