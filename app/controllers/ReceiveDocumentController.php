@@ -68,7 +68,7 @@ class ReceiveDocumentController extends BaseController {
 	public function waiting_apply()
 	{
 		//
-		$data["documents"] = ReceiveDocument::get_waiting_apply_documents();
+		$data["documents"] = ReceiveDocument::get_documents('waiting-apply');
 
 		return View::make('receive_documents.waiting-apply', $data);
 	}
@@ -128,7 +128,7 @@ class ReceiveDocumentController extends BaseController {
 	public function ejected()
 	{
 		//
-		$data["documents"] = ReceiveDocument::get_ejected_documents();
+		$data["documents"] = ReceiveDocument::get_documents('ejected');
 
 		return View::make('receive_documents.ejected', $data);
 	}
@@ -142,7 +142,7 @@ class ReceiveDocumentController extends BaseController {
 		//neu la van thu thi cho phep xem tat ca cong van da duoc phe duyet
 		if( $user->role == Config::get('user.role')['writer'] )
 		{
-			$data["documents"] = ReceiveDocument::get_applied_documents();
+			$data["documents"] = ReceiveDocument::get_documents('applied');
 		}
 		//neu la nhan vien thi xem cac Document duoc gui den nhan vien nay
 		else

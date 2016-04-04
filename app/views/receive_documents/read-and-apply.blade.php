@@ -14,23 +14,23 @@
         {{ Form::token() }}
     </form>
 
-    <script>
-        $(".to_department").change( function(){
-            var department_id = $(this).val();
+    {{--<script>--}}
+        {{--$(".to_department").change( function(){--}}
+            {{--var department_id = $(this).val();--}}
 
-            if(this.checked) {
-                $.ajax({
-                            method: "POST",
-                            url: "{{ url() }}/get_department_staff",
-                            data: {department_id: department_id}
-                        })
-                        .done(function (msg) {
-                            $(this).closest("br").append("<fdf");
-                        });
-            }
-            else{
-                alert("uncheck");
-            }
-        });
-    </script>
+            {{--if(this.checked) {--}}
+                {{--$.ajax({--}}
+                            {{--method: "POST",--}}
+                            {{--url: "{{ url() }}/get_department_staff",--}}
+                            {{--data: {department_id: department_id}--}}
+                        {{--})--}}
+                        {{--.done(function (msg) {--}}
+                            {{--$(this).closest("br").append("<fdf");--}}
+                        {{--});--}}
+            {{--}--}}
+            {{--else{--}}
+                {{--alert("uncheck");--}}
+            {{--}--}}
+        {{--});--}}
+    {{--</script>--}}
 @endsection
