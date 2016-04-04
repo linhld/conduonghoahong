@@ -210,6 +210,14 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'DocumentController@out_store'
 		));
 
+
+
+	//TIM KIEM PHONG BAN
+	Route::get('/search/department',
+		array('as' => 'search-department',
+			'uses' => 'DepartmentController@search'
+		));
+
 });
 
 Route::post('/get_department_staff',

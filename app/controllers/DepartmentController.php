@@ -113,4 +113,14 @@ class DepartmentController extends BaseController {
 		return $html;
 	}
 
+	//Tim kiem phong ban
+	public function search()
+	{
+		$query = Input::get('query');
+
+		$data['departments'] = Department::where('name','like', '%'.$query.'%')->get();
+
+		return View::make('departments.index',$data);
+	}
+
 }
