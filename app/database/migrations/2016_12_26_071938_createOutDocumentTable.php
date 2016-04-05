@@ -2,7 +2,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateReceiveDocumentTable extends Migration {
+class CreateOutDocumentTable extends Migration {
 	/**
 	 * Run the migrations.
 	 *
@@ -10,22 +10,22 @@ class CreateReceiveDocumentTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('receive_documents', function($table)
+		Schema::create('out_documents', function($table)
 		{
 			$table->increments('id');
-			$table->string('document_code');
+			//so cong van den
+			$table->string('document_receive_code');
+			//so cong van di
+			$table->string('document_out_code');
 			$table->string('from_department');
 			$table->string('from_staff');
 			$table->string('title');
 			$table->text('content');
 			$table->string('short_content');
 			$table->date('time_send');
-			$table->date('time_receive');
-
-			$table->integer('to_department')->default(0);
-			$table->integer('to_staff')->default(0);
 
 			$table->integer('document_type')->default(0);
+			$table->integer('status')->default(0);
 			//Tao truong created_at va update_at cho bang nay
 			$table->timestamps();
 		});
@@ -38,6 +38,6 @@ class CreateReceiveDocumentTable extends Migration {
 	public function down()
 	{
 		//
-		Schema::drop('receive_documents');
+		Schema::drop('out_documents');
 	}
 }

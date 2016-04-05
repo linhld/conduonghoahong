@@ -198,23 +198,87 @@ Route::group(array('before' => 'auth'), function() {
 		));
 
 	// danh cho giam doc thuc hien cac tac vu cho cong van den
-	Route::post('/document/action/{id}',
+	Route::post('/document/receive-action/{id}',
 		array('as' => 'document-receive-action',
 			'uses' => 'ReceiveDocumentController@action'
 		));
 
 
 
+
+
+
 	//ROUTE QUAN LI CONG VAN DI
-	Route::get('/document/document-create-out',
-		array('as' => 'out-create-document',
-			'uses' => 'DocumentController@out_create'
+	//danh sach cac cong van bi tu choi
+	Route::get('/document/out-read/{id}',
+		array('as' => 'document-out-read',
+			'uses' => 'OutDocumentController@read'
 		));
 
-	Route::post('/document/store-out-document',
-		array('as' => 'store-out-document',
-			'uses' => 'DocumentController@out_store'
+	Route::get('/document/out-create',
+		array('as' => 'document-out-create',
+			'uses' => 'OutDocumentController@create'
 		));
+
+	Route::post('/document/out-store',
+		array('as' => 'document-out-store',
+			'uses' => 'OutDocumentController@store'
+		));
+
+	Route::get('/document/out-edit/{id}',
+		array('as' => 'document-out-edit',
+			'uses' => 'OutDocumentController@edit'
+		));
+
+	Route::post('/document/out-update/{id}',
+		array('as' => 'document-out-update',
+			'uses' => 'OutDocumentController@update'
+		));
+
+	Route::get('/document/out-destroy/{id}',
+		array('as' => 'document-out-destroy',
+			'uses' => 'OutDocumentController@destroy'
+		));
+
+	//danh sach cong van dang cho duyet
+	Route::get('/document/out-waiting-apply',
+		array('as' => 'document-out-waiting-apply',
+			'uses' => 'OutDocumentController@waiting_apply'
+		));
+
+	//danh sach cong van dang cho duyet
+	Route::get('/document/out-waiting-accept',
+		array('as' => 'document-out-waiting-accept',
+			'uses' => 'OutDocumentController@waiting_accept'
+		));
+
+	//danh sach cac cong van bi tu choi
+	Route::get('/document/out-ejected',
+		array('as' => 'document-out-ejected',
+			'uses' => 'OutDocumentController@ejected'
+		));
+
+	//danh sach cac cong van bi tu choi
+	Route::get('/document/out-applied',
+		array('as' => 'document-out-applied',
+			'uses' => 'OutDocumentController@applied'
+		));
+
+	//danh sach cac cong van bi tu choi
+	Route::get('/document/out-read-and-apply/{id}',
+		array('as' => 'document-out-read-and-apply',
+			'uses' => 'OutDocumentController@read_and_apply'
+		));
+
+	// danh cho giam doc thuc hien cac tac vu cho cong van den
+	Route::post('/document/out-action/{id}',
+		array('as' => 'document-out-action',
+			'uses' => 'OutDocumentController@action'
+		));
+	
+	
+	
+
 
 
 
@@ -226,8 +290,8 @@ Route::group(array('before' => 'auth'), function() {
 
 	//TIM KIEM cong
 	Route::get('/search/document',
-		array('as' => 'search-document',
-			'uses' => 'DepartmentController@search'
+		array('as' => 'receive-document',
+			'uses' => 'Controller@search'
 		));
 
 });

@@ -1,7 +1,7 @@
 <?php
 
 
-class ReceiveDocument extends Eloquent {
+class OutDocument extends Eloquent {
 
 
 	/**
@@ -9,6 +9,6 @@ class ReceiveDocument extends Eloquent {
 	 *
 	 * @var string
 	 */
-	protected $table = 'receive_documents';
+	protected $table = 'out_documents';
 
 }
