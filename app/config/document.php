@@ -12,6 +12,7 @@ return array(
 		'waiting_apply'    	=> 1,
 		'ejected'    	=> 2,
 		'applied'    	=> 3,
+		'accepted'    	=> 3,
 		'waiting_accept' 	=> 4,
 	),
 

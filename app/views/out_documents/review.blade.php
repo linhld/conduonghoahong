@@ -3,10 +3,10 @@
 
     <script src="{{ url() }}/ckeditor/ckeditor.js"></script>
 
-    <h3>SỬA CÔNG VĂN ĐẾN</h3>
+    <h3>SỬA VÀ DUYỆT CÔNG VĂN ĐI</h3>
     <br>
     <br>
-    <form role="form" action="{{ URL::route('document-out-update', $document->id) }}" method="post">
+    <form role="form" action="{{ URL::route('document-out-action', $document->id) }}" method="post">
 
         <div class="form-group">
             <label for="document_type">Loại công văn:</label>
@@ -29,6 +29,11 @@
             <input type="text" name="document_out_code"  value="{{ $document->document_out_code }}">
         </div>
         <div class="form-group">
+            <label for="document_code">Số công văn đến:</label>
+            <input type="text" name="document_receive_code"  value="{{ $document->document_receive_code }}">
+        </div>
+
+        <div class="form-group">
             <label for="from_department">Đơn vị gửi:</label>
             <input type="text" name="from_department" value="{{ $document->from_department }}">
         </div>
@@ -39,11 +44,11 @@
 
         <div class="form-group">
             <label for="from_department">Đơn vị nhận:</label>
-            <input type="text" name="from_department" value="{{ $document->to_department }}">
+            <input type="text" name="to_department" value="{{ $document->to_department }}">
         </div>
         <div class="form-group">
             <label for="from_staff"> Người nhận:</label>
-            <input type="text" name="from_staff"  value="{{ $document->to_staff }}">
+            <input type="text" name="to_staff"  value="{{ $document->to_staff }}">
         </div>
 
         <div class="form-group">
@@ -64,7 +69,8 @@
             <input type="text" name="short_content" value="{{ $document->short_content }}">
         </div>
 
-        <input class="btn btn-success" type="submit" value="Cập nhật">
+        <button class="btn btn-success" type="submit" name="action" value="accept"> Chấp nhận và gửi lên lãnh đạo</button>
+        <button class="btn btn-alert" type="submit" name="action" value="no_accept">trả lại cho người gửi</button>
         {{ Form::token() }}
     </form>
 

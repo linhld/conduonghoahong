@@ -203,6 +203,11 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'ReceiveDocumentController@action'
 		));
 
+	//TIM KIEM cong
+	Route::get('/search/receive',
+		array('as' => 'document-receive-search',
+			'uses' => 'ReceiveController@search'
+		));
 
 
 
@@ -228,6 +233,11 @@ Route::group(array('before' => 'auth'), function() {
 	Route::get('/document/out-edit/{id}',
 		array('as' => 'document-out-edit',
 			'uses' => 'OutDocumentController@edit'
+		));
+
+	Route::get('/document/out-review/{id}',
+		array('as' => 'document-out-review',
+			'uses' => 'OutDocumentController@review'
 		));
 
 	Route::post('/document/out-update/{id}',
@@ -275,8 +285,12 @@ Route::group(array('before' => 'auth'), function() {
 		array('as' => 'document-out-action',
 			'uses' => 'OutDocumentController@action'
 		));
-	
-	
+
+	//TIM KIEM cong
+	Route::get('/search/out',
+		array('as' => 'document-out-search',
+			'uses' => 'OutController@search'
+		));
 	
 
 
@@ -288,11 +302,6 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'DepartmentController@search'
 		));
 
-	//TIM KIEM cong
-	Route::get('/search/document',
-		array('as' => 'receive-document',
-			'uses' => 'Controller@search'
-		));
 
 });
 

@@ -34,6 +34,16 @@
             <label for="from_staff"> Người gửi:</label>
             <input type="text" name="from_staff">
         </div>
+
+        <div class="form-group">
+            <label for="from_department">Đơn vị nhận :</label>
+            <input type="text" name="to_department">
+        </div>
+        <div class="form-group">
+            <label for="from_staff"> Người nhận:</label>
+            <input type="text" name="to_staff">
+        </div>
+
         <div class="form-group">
             <label for="title">Tiêu đề:</label>
             <input type="text" name="title">

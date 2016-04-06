@@ -19,6 +19,8 @@ class CreateOutDocumentTable extends Migration {
 			$table->string('document_out_code');
 			$table->string('from_department');
 			$table->string('from_staff');
+			$table->string('to_department');
+			$table->string('to_staff');
 			$table->string('title');
 			$table->text('content');
 			$table->string('short_content');
@@ -26,6 +28,8 @@ class CreateOutDocumentTable extends Migration {
 
 			$table->integer('document_type')->default(0);
 			$table->integer('status')->default(0);
+
+			$table->integer('send_by');
 			//Tao truong created_at va update_at cho bang nay
 			$table->timestamps();
 		});

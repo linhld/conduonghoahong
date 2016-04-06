@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
 
-    <form role="form" method="POST" action="{{ URL::route('document-out-action', $document->id) }}?action=apply">
+    <form role="form" method="POST" action="{{ URL::route('document-out-action', $document->id) }}">
 
         <? echo $document_body ?>
 
@@ -10,8 +10,10 @@
 
         @endforeach
 
-        <input class="btn btn-success" type="submit" value="Duyệt">
-        {{ Form::token() }}
+            <button class="btn btn-success" type="submit" name="action" value="apply"> Chấp nhận</button>
+            <button class="btn btn-alert" type="submit" name="action" value="eject">từ chối</button>
+
+            {{ Form::token() }}
     </form>
 
     {{--<script>--}}

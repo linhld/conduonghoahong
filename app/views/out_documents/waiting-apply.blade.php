@@ -33,7 +33,6 @@
                         <!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
                     @elseif($user_role== Config::get("user.role")["chef"] )
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-out-read-and-apply", $document->id) }}">Xem</a>
-                        <a class="btn btn-small btn-danger" href="{{ URL::route("document-out-action", $document->id ) }}?action=eject">Từ chối</a>
                     @else
 
                     @endif

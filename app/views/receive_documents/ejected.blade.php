@@ -25,8 +25,7 @@
                     <!-- show the nerd (uses the show method found at GET /nerds/{id} -->
 
                     <!-- edit this nerd (uses the edit method found at GET /nerds/{id}/edit -->
-                    <a class="btn btn-small btn-info" href="{{ URL::route("departments-edit", $document->id) }}">Sửa</a>
-                    <a class="btn btn-small btn-danger" href="{{ URL::route("departments-destroy", $document->id ) }}">Xóa</a>
+                    <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">xem</a>
 
                 </td>
             </tr>

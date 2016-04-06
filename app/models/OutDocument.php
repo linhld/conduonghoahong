@@ -11,4 +11,13 @@ class OutDocument extends Eloquent {
 	 */
 	protected $table = 'out_documents';
 
+	public static function get_documents($status)
+	{
+		return self::where("status", Config::get('document.out_status')[$status])->get();
+	}
+
+	public function get_name_of_type()
+	{
+		return DB::table('document_types')->whereId($this->document_type)->first()->name;
+	}
 }
