@@ -157,7 +157,7 @@ class OutDocumentController extends BaseController {
 					//luu cong van den
 					$document->save();
 
-					Session::flash('global','xét duyệt thành công');
+					Session::flash('global','đã gửi lên chờ lãnh đạo phê duyệt thành công');
 				}
 			break;
 
