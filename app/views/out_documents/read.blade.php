@@ -7,8 +7,12 @@
         </div>
 
         <div class="form-group">
-            <label for="document_code">Số công văn:</label>
-            {{ $document->document_code }}
+            <label for="document_code">Số công văn đi :</label>
+            {{ $document->document_out_code }}
+        </div>
+        <div class="form-group">
+            <label for="document_code">Số công văn đến  :</label>
+            {{ $document->document_receive_code }}
         </div>
         <div class="form-group">
             <label for="from_department">Đơn vị gửi:</label>
@@ -17,6 +21,14 @@
         <div class="form-group">
             <label for="from_staff"> Người gửi:</label>
             {{ $document->from_staff }}
+        </div>
+        <div class="form-group">
+            <label for="document_code">Số công văn đi :</label>
+            {{ $document->to_department }}
+        </div>
+        <div class="form-group">
+            <label for="document_code">Số công văn đi :</label>
+            {{ $document->to_staff }}
         </div>
         <div class="form-group">
             <label for="title">Tiêu đề:</label>
@@ -31,10 +43,6 @@
             {{  $document->time_send }}
         </div>
 
-        <div class="form-group">
-            <label for="title">Ngày nhận</label>
-            {{ $document->time_out }}
-        </div>
 
         <div class="form-group">
             <label for="title">Trích yếu</label>

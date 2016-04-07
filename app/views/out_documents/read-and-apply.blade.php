@@ -5,11 +5,6 @@
 
         <? echo $document_body ?>
 
-        @foreach( Department::all() as $department )
-            <input type="checkbox" class="to_department" name="to_department[]" value="{{ $department->id  }}">{{ $department->name }}<br>
-
-        @endforeach
-
             <button class="btn btn-success" type="submit" name="action" value="apply"> Chấp nhận</button>
             <button class="btn btn-alert" type="submit" name="action" value="eject">từ chối</button>
 

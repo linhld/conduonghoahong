@@ -157,7 +157,7 @@ class OutDocumentController extends BaseController {
 					//luu cong van den
 					$document->save();
 
-					Session::flash('global','đã gửi lên chờ lãnh đạo phê duyệt thành công');
+					Session::flash('global','đã gửi lên chờ lãnh đạo phê  thành công');
 				}
 			break;
 
@@ -171,6 +171,8 @@ class OutDocumentController extends BaseController {
 				{
 					$document->status = Config::get("document.out_status")["applied"];
 					$document->save();
+
+					Session::flash('global','duyệt công văn đi thành công');
 				}
 			break;
 
@@ -180,6 +182,8 @@ class OutDocumentController extends BaseController {
 				{
 					$document->status = Config::get("document.out_status")["ejected"];
 					$document->save();
+
+					Session::flash('global','đã từ chối công văn đi');
 				}
 			break;
 
@@ -214,18 +218,7 @@ class OutDocumentController extends BaseController {
 	public function applied()
 	{
 		//
-		$user = Auth::user();
-
-		//neu la van thu thi cho phep xem tat ca cong van da duoc phe duyet
-		if( $user->role == Config::get('user.role')['writer'] )
-		{
-			$data["documents"] = OutDocument::get_documents('applied');
-		}
-		//neu la nhan vien thi xem cac Document duoc gui den nhan vien nay
-		else
-		{
-			$data["documents"] = $user->get_receive_applies_document();
-		}
+		$data["documents"] = OutDocument::get_documents('applied');
 
 		return View::make('out_documents.applied', $data);
 	}

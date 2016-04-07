@@ -6,7 +6,7 @@
     <table class="table table-striped table-bordered">
         <thead>
         <tr>
-            <td>Số công văn</td>
+            <td>Số công văn đi</td>
             <td>Tiêu đề</td>
             <td>Sửa/ xóa</td>
         </tr>
@@ -14,7 +14,7 @@
         <tbody>
         @foreach($documents as $index => $document)
             <tr>
-                <td>{{ $document->document_code }}</td>
+                <td>{{ $document->document_out_code }}</td>
                 <td>{{ $document->title }}</td>
                 <!-- we will also add show, edit, and delete buttons -->
                 <td>
@@ -29,13 +29,14 @@
                     <?php $config_role = Config::get("user.role"); ?>
                             <!-- neu user la Van thu thi hien nut sut va  -->
                     @if( $user_role == $config_role["writer"] )
+                        <a class="btn btn-small btn-info" href="{{ URL::route("document-out-read", $document->id) }}">xem</a>
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-out-edit", $document->id) }}">Sửa</a>
                         <a class="btn btn-small btn-danger" href="{{ URL::route("document-out-destroy", $document->id ) }}">Xóa</a>
                         <!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
                     @elseif($user_role == $config_role["staff"]  )
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-out-read", $document->id) }}">xem</a>
                     @else
-
+                        <a class="btn btn-small btn-info" href="{{ URL::route("document-out-read", $document->id) }}">xem</a>
                     @endif
                 </td>
             </tr>

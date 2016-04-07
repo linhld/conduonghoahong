@@ -47,6 +47,9 @@
 								<li><a href="{{ URL::route("document-receive-search") }}">Tìm CV đến</a></li>
 
 								<li><a href="{{ URL::route("document-out-waiting-accept") }}">CV đi đang chờ xem lại</a></li>
+								<li><a href="{{ URL::route("document-out-applied") }}">CV đi đã duyệt</a></li>
+								<li><a href="{{ URL::route("document-out-ejected") }}">CV đi đã từ chối</a></li>
+
 								<li><a href="{{ URL::route("document-out-search") }}">Tìm CV </a></li>
 							</ul>
 
@@ -65,8 +68,9 @@
 								<li><a href="{{ URL::route("document-receive-waiting-apply") }}">CV đến đang chờ duyệt</a></li>
 								<li><a href="{{ URL::route("document-receive-ejected") }}">CV đến bị từ chối</a></li>
 
-								<li><a href="{{ URL::route("document-out-waiting-apply") }}">CV đi chờ duyệt</a></li>
+								<li><a href="{{ URL::route("document-out--apply") }}">CV đi chờ duyệt</a></li>
 								<li><a href="{{ URL::route("document-out-ejected") }}">CV đi bị từ chối</a></li>
+								<li><a href="{{ URL::route("document-out-applied") }}">CV đi đã duyệt</a></li>
 							</ul>
 					@elseif( $user_role == $config_role["staff"])
 							<ul class="nav navbar-nav">
