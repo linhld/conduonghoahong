@@ -18,6 +18,11 @@ class CreateUserTable extends Migration {
 			$table->string('password', 100);
 			$table->integer('role')->default(0);
 			$table->integer('department')->default(0);
+
+			$table->string('email')->nullable();
+			$table->string('tel')->nullable();
+			$table->date('birth_date');
+			$table->integer('gender')->default( Config::get('user.gender')['male'] );
 			//RememberToken dung de ghi nho thong tin
 			//Giup user lan sau vao co the dang nhap luon
 			$table->rememberToken();

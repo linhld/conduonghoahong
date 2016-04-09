@@ -26,14 +26,9 @@
 					@if( $user_role == $config_role["admin"] )
 					<!-- Menu danh cho Admin -->
 						<ul class="nav navbar-nav">
-							<li><a href="{{ URL::route("departments-index") }}">Quản lí phòng ban</a></li>
+							
 							<li><a href="{{ URL::route("users-index") }}">Quản lí tài khoản</a></li>
-							<form class="navbar-form navbar-left" role="search" action="{{ URL::route('search-department') }}">
-								<div class="form-group">
-									<input type="text" name="query" class="form-control" placeholder="tìm kiếm phòng ban">
-								</div>
-								<button type="submit" class="btn btn-default">Tìm</button>
-							</form>
+							
 						</ul>
 
 
@@ -64,6 +59,7 @@
 
 					@elseif( $user_role == $config_role["chef"])
 							<ul class="nav navbar-nav">
+
 								<li><a href="{{ URL::route("document-receive-create") }}">Soạn CV đi</a></li>
 								<li><a href="{{ URL::route("document-receive-waiting-apply") }}">CV đến đang chờ duyệt</a></li>
 								<li><a href="{{ URL::route("document-receive-ejected") }}">CV đến bị từ chối</a></li>
@@ -71,6 +67,7 @@
 								<li><a href="{{ URL::route("document-out-waiting-apply") }}">CV đi chờ duyệt</a></li>
 								<li><a href="{{ URL::route("document-out-ejected") }}">CV đi bị từ chối</a></li>
 								<li><a href="{{ URL::route("document-out-applied") }}">CV đi đã duyệt</a></li>
+								<li><a href="{{ URL::route("departments-index") }}">Quản lí phòng ban</a></li>
 							</ul>
 					@elseif( $user_role == $config_role["staff"])
 							<ul class="nav navbar-nav">

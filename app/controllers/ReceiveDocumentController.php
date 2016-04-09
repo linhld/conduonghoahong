@@ -63,6 +63,8 @@ class ReceiveDocumentController extends BaseController {
 		$receive_document->save();
 
 		// load the view and pass the nerds
+		Session::flash('global','sửa Công văn thành công');
+
 		return Redirect::route('home');
 	}
 
@@ -138,6 +140,8 @@ class ReceiveDocumentController extends BaseController {
 				{
 					$document->status = Config::get("document.receive_status")["ejected"];
 					$document->save();
+
+					Session::flash('global','từ chối Công văn thành công');
 				}
 			case "store":
 

@@ -38,14 +38,22 @@ class UserController extends BaseController {
 		//luu thong tin user vao CSDL
 		$user = new User();
 
-		$user->name       	= Input::get('name');
 		$user->username    	= Input::get('username');
 		//ma hoa password lay tu Input truoc khi luu vao
 		$user->password    	= Hash::make( Input::get('password') );
+
+		$user->name       	= Input::get('name');
+		$user->email		= Input::get('email');
+		$user->tel			= Input::get('tel');
+		$user->gender		= Input::get('gender');
+		$user->birth_date	= Input::get('birth_date');
+
 		$user->department	= Input::get('department');
 		$user->role			= Input::get('role');
 
 		$user->save();
+
+		Session::flash('global','Tạo tài khoản thành công');
 
 		return Redirect::route("users-index");
 	}
@@ -74,12 +82,21 @@ class UserController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//lay ten can chinh sua cua phong ban
-		$new_name = Input::get("name");
 		//cap nhat vao CSDL
-		$User = User::find($id);
-		$User->name = $new_name;
-		$User->save();
+		$user = User::find($id);
+
+		$user->name       	= Input::get('name');
+		$user->email		= Input::get('email');
+		$user->tel			= Input::get('tel');
+		$user->gender		= Input::get('gender');
+		$user->birth_date	= Input::get('birth_date');
+
+		$user->department	= Input::get('department');
+		$user->role			= Input::get('role');
+
+		$user->save();
+
+		Session::flash('global','cập nhật tài khoản thành công');
 
 		return Redirect::route("users-index");
 	}
@@ -96,6 +113,8 @@ class UserController extends BaseController {
 		$User = User::find($id);
 		//xoa phong ban nay
 		$User->delete();
+
+		Session::flash('global','xóa tài khoản thành công');
 
 		return Redirect::route("users-index");
 	}

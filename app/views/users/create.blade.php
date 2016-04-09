@@ -4,10 +4,6 @@
 <form role="form" action="{{ URL::route('users-store') }}" method="post">
 
     <div class="form-group">
-        <label for="name">Họ tên:</label>
-        <input class="form-control" type="text" name="name">
-    </div>
-    <div class="form-group">
         <label for="username">Tên đăng nhập:</label>
           <input class="form-control" type="text" name="username">
     </div>
@@ -15,6 +11,35 @@
         <label for="password">Mật khẩu:</label>
          <input class="form-control" type="text" name="password">
     </div>
+
+    <div class="form-group">
+        <label for="name">Họ tên:</label>
+        <input class="form-control" type="text" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="password">email:</label>
+         <input class="form-control" type="name" name="email">
+    </div>
+
+    <div class="form-group">
+        <label for="password">ngày sinh:</label>
+         <input class="form-control" type="date" name="birth_date">
+    </div>
+
+     <div class="form-group">
+        <label for="password">giới tính:</label>
+         <select name="gender">
+                <option value="{{ Config::get('user.gender')['male'] }}">nam</option>
+                <option value="{{ Config::get('user.gender')['female'] }}">nữ</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="password">SDT:</label>
+         <input class="form-control" type="text" name="tel">
+    </div>
+
 
     <div class="form-group">
         <label for="password"> Phòng ban:</label>

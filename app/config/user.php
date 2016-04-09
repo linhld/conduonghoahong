@@ -10,4 +10,9 @@ return array(
 		'writer' 	=> 5
 	),
 
+	'gender' => array(
+		'male' => 0,
+		'female' => 1
+	)
+
 );
