@@ -186,14 +186,14 @@ class ReceiveDocumentController extends BaseController {
 		$user = Auth::user();
 
 		//neu la van thu thi cho phep xem tat ca cong van da duoc phe duyet
-		if( $user->role == Config::get('user.role')['writer'] )
+		if( $user->role == Config::get('user.role')['staff'] )
 		{
-			$data["documents"] = ReceiveDocument::get_documents('applied');
+			$data["documents"] = $user->get_receive_applies_document();
 		}
 		//neu la nhan vien thi xem cac Document duoc gui den nhan vien nay
 		else
 		{
-			$data["documents"] = $user->get_receive_applies_document();
+			$data["documents"] = ReceiveDocument::get_documents('applied');
 		}
 
 		return View::make('receive_documents.applied', $data);
