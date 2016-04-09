@@ -34,7 +34,7 @@
 
                     <!-- edit this nerd (uses the edit method found at GET /nerds/{id}/edit -->
                     <a class="btn btn-small btn-info" href="{{ URL::route("departments-edit", $department->id) }}">Sửa</a>
-                    <a class="btn btn-small btn-danger" href="{{ URL::route("departments-destroy", $department->id ) }}">Xóa</a>
+                    <a class="delete btn btn-small btn-danger" href="{{ URL::route("departments-destroy", $department->id ) }}">Xóa</a>
 
                 </td>
             </tr>

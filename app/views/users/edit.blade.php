@@ -85,7 +85,7 @@
         </select>
     </div>
 
-        <input class="button success" type="submit" value="Cập nhật">
+        <input class="btn btn-success" type="submit" value="Cập nhật">
         {{ Form::token() }}
     </form>
 

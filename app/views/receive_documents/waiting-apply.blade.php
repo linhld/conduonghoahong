@@ -29,7 +29,7 @@
                             <!-- neu user la Van thu thi hien nut sut va  -->
                     @if( $user_role == Config::get("user.role")["writer"] )
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-edit", $document->id) }}">Sửa</a>
-                        <a class="btn btn-small btn-danger" href="{{ URL::route("document-receive-destroy", $document->id ) }}">Xóa</a>
+                        <a class="delete btn btn-small btn-danger" href="{{ URL::route("document-receive-destroy", $document->id ) }}">Xóa</a>
                         <!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
                     @elseif($user_role== Config::get("user.role")["chef"] )
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read-and-apply", $document->id) }}">Xem</a>

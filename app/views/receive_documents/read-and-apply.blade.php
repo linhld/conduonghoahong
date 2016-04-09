@@ -1,16 +1,25 @@
 @extends('layout.main')
 @section('content')
 
-    <form role="form" method="POST" action="{{ URL::route('document-receive-action', $document->id) }}?action=apply">
+    <form role="form" method="POST" action="{{ URL::route('document-receive-action', $document->id) }}">
 
-        <? echo $document_body ?>
+        <?php echo $document_body ?>
+
+        <br>
+            Chọn phòng ban xử lí công văn 
+         <br>   
+        <br>
 
         @foreach( Department::all() as $department )
-            <input type="checkbox" class="to_department" name="to_department[]" value="{{ $department->id  }}">{{ $department->name }}<br>
+            <input type="checkbox" class="to_department" name="to_department[]" value="{{ $department->id }}">{{ $department->name }}<br>
 
         @endforeach
 
-        <input class="btn btn-success" type="submit" value="Duyệt">
+        <br>
+        
+        <button class="btn btn-success" type="submit" name="action" value="apply"> Duyệt</button>
+            <button class="btn btn-alert" type="submit" name="action" value="eject">từ chối</button>
+
         {{ Form::token() }}
     </form>
 

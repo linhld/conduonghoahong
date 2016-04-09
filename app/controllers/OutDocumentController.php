@@ -86,6 +86,16 @@ class OutDocumentController extends BaseController {
 		return Redirect::route('home');
 	}
 
+	public function destroy($document_id)
+	{
+		$document = OutDocument::find($document_id);
+
+		$document->delete();
+
+		Session::flash('global','xóa Công văn thành công');
+
+		return Redirect::route('home');
+	}
 
 	//danh sach cong van dang cho duyet
 	public function waiting_apply()

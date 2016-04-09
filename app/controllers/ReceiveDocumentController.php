@@ -62,8 +62,18 @@ class ReceiveDocumentController extends BaseController {
 		//luu cong van den
 		$receive_document->save();
 
-		// load the view and pass the nerds
 		Session::flash('global','sửa Công văn thành công');
+
+		return Redirect::route('home');
+	}
+
+	public function destroy($document_id)
+	{
+		$document = ReceiveDocument::find($document_id);
+
+		$document->delete();
+
+		Session::flash('global','xóa Công văn thành công');
 
 		return Redirect::route('home');
 	}

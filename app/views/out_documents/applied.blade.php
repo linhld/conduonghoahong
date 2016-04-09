@@ -31,7 +31,7 @@
                     @if( $user_role == $config_role["writer"] )
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-out-read", $document->id) }}">xem</a>
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-out-edit", $document->id) }}">Sửa</a>
-                        <a class="btn btn-small btn-danger" href="{{ URL::route("document-out-destroy", $document->id ) }}">Xóa</a>
+                        <a class="delete btn btn-small btn-danger" href="{{ URL::route("document-out-destroy", $document->id ) }}">Xóa</a>
                         <!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
                     @elseif($user_role == $config_role["staff"]  )
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-out-read", $document->id) }}">xem</a>
