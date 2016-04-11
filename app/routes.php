@@ -298,7 +298,7 @@ Route::group(array('before' => 'auth'), function() {
 
 	//TIM KIEM PHONG BAN
 	Route::get('/search/department',
-		array('as' => 'search-department',
+		array('as' => 'department-search',
 			'uses' => 'DepartmentController@search'
 		));
 

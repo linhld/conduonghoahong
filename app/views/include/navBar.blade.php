@@ -28,7 +28,14 @@
 						<ul class="nav navbar-nav">
 							
 							<li><a href="{{ URL::route("users-index") }}">Quản lí tài khoản</a></li>
-							
+							<li><a href="{{ URL::route("departments-index") }}">Quản lí phòng ban</a></li>
+
+							<form class="navbar-form navbar-left" action="{{ URL::route('department-search') }}" method='get' role="search">
+								<div class="form-group">
+									<input type="text" name="query" class="form-control" placeholder="tìm kiếm phòng ban">
+								</div>
+								<button type="submit" class="btn btn-default">Tìm</button>
+							</form>
 						</ul>
 
 
@@ -48,15 +55,6 @@
 								<li><a href="{{ URL::route("document-out-search") }}">Tìm CV </a></li>
 							</ul>
 
-
-
-							<form class="navbar-form navbar-left" role="search">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="tìm kiếm CV">
-								</div>
-								<button type="submit" class="btn btn-default">Tìm</button>
-							</form>
-
 					@elseif( $user_role == $config_role["chef"])
 							<ul class="nav navbar-nav">
 
@@ -69,7 +67,7 @@
 								<li><a href="{{ URL::route("document-out-applied") }}">CV đi đã duyệt</a></li>
 								<li><a href="{{ URL::route("document-out-ejected") }}">CV đi bị từ chối</a></li>
 								
-								<li><a href="{{ URL::route("departments-index") }}">Quản lí phòng ban</a></li>
+
 							</ul>
 					@elseif( $user_role == $config_role["staff"])
 							<ul class="nav navbar-nav">

@@ -1,13 +1,6 @@
 @extends('layout.main')
 @section('content')
 
-    <form class="navbar-form navbar-left" role="search" action="{{ URL::route('search-department') }}">
-        <div class="form-group">
-            <input type="text" name="query" class="form-control" placeholder="tìm kiếm phòng ban">
-        </div>
-        <button type="submit" class="btn btn-default">Tìm</button>
-    </form>
-
 
     <a class="btn btn-success" href="{{ URL::route('departments-create') }}">Tạo phòng ban </a>
 
