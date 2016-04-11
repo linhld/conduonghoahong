@@ -206,8 +206,14 @@ Route::group(array('before' => 'auth'), function() {
 	//TIM KIEM cong
 	Route::get('/search/receive',
 		array('as' => 'document-receive-search',
-			'uses' => 'ReceiveController@search'
+			'uses' => 'ReceiveDocumentController@search'
 		));
+
+	Route::post('/search/receive',
+		array('as' => 'document-receive-search',
+			'uses' => 'ReceiveDocumentController@search_result'
+		));
+
 
 
 

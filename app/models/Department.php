@@ -16,13 +16,21 @@ class Department extends Eloquent {
 		return $this->hasMany('User','department','id');
 	}
 
-	public function get_receive_documents()
+	public function get_receive_documents($search_query = '')
 	{
 		$documents = DocumentDepartment::where('department_id',$this->id)->lists('document_id');
 
 		if( !empty($documents) )
+		{
+			if( !empty($search_query) )
+				return  ReceiveDocument::whereIn('id',$documents)
+							->where('title','like','%'.$search_query.'%')
+							->get();
+							
 		   return ReceiveDocument::whereIn('id',$documents)->get();
+		}
 
 		return array();
 	}
+
 }

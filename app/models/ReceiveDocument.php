@@ -20,4 +20,9 @@ class ReceiveDocument extends Eloquent {
 	{
 		return DB::table('document_types')->whereId($this->document_type)->first()->name;
 	}
+
+	public static function search($query)
+	{
+		return self::where('title', 'like', '%'.$query.'%')->get();
+	}
 }

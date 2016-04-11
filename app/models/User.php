@@ -32,14 +32,12 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $this->belongsTo("Department","department");
 	}
 
-	public function get_receive_applies_document()
+	public function get_receive_applies_document($search_query = '')
 	{
 //		return $this->hasMany('ReceiveDocument','to_staff')
 //					->where("status", Config::get('document.receive_status')['applied'])
 //					->get();
-		return $this->departments->get_receive_documents();
+		return $this->departments->get_receive_documents( $search_query );
 
 	}
-
-
 }

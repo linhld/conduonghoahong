@@ -78,6 +78,31 @@ class ReceiveDocumentController extends BaseController {
 		return Redirect::route('home');
 	}
 
+	public function search()
+	{
+		// load the view and pass the nerds
+		return View::make('receive_documents.search');
+	}
+
+	public function search_result()
+	{
+		$query = Input::get('query');
+
+		$config_role = Config::get('user.role');
+		$user_role = Auth::user()->role;
+
+		if( $user_role == $config_role["writer"] or $user_role == $config_role["chef"] )
+		{
+			$data['documents'] = ReceiveDocument::search( $query );
+		}
+		else
+		{
+			$data['documents'] = Auth::user()->get_receive_applies_document( $query );
+		}
+		// view and pass the nerds
+		return View::make('receive_documents.search',$data);
+	}
+
 	//danh sach cong van dang cho duyet
 	public function waiting_apply()
 	{
