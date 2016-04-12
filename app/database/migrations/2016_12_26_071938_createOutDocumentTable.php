@@ -30,6 +30,7 @@ class CreateOutDocumentTable extends Migration {
 			$table->integer('status')->default(0);
 
 			$table->integer('send_by');
+			$table->integer('send_by_department');
 			//Tao truong created_at va update_at cho bang nay
 			$table->timestamps();
 		});

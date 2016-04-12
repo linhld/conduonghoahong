@@ -35,9 +35,7 @@ class Department extends Eloquent {
 
 	public function get_out_documents($search_query = '')
 	{
-		$staff_list = $this->get_staff_list()->lists('id');
-
-		$documents = OutDocument::whereIn('send_by', $staff_list);
+		$documents = $this->hasMany('OutDocument', 'send_by_department');
 
 		if( !empty($documents) )
 		{

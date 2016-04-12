@@ -19,8 +19,8 @@ class OutDocumentController extends BaseController {
 		$out_document->document_receive_code 	= Input::get("document_receive_code");
 		$out_document->document_out_code 		= Input::get("document_out_code");
 
-		$out_document->from_department 		= Input::get("from_department");
-		$out_document->from_staff 			= Input::get("from_staff");
+		$out_document->from_department 		= Auth::user()->department;
+		$out_document->from_staff 			= Auth::id();
 
 		$out_document->to_department 		= Input::get("to_department");
 		$out_document->to_staff 			= Input::get("to_staff");
@@ -35,6 +35,7 @@ class OutDocumentController extends BaseController {
 		$out_document->status				= Config::get("document.out_status")["accepted"];
 		//ghi lai xem cong van nay dpuoc gui boi nguoi nao
 		$out_document->send_by				= Auth::id();
+		$out_document->send_by_department	= Auth::user()->department;
 		//luu cong van den
 		$out_document->save();
 
