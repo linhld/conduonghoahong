@@ -40,4 +40,9 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $this->departments->get_receive_documents( $search_query );
 
 	}
+
+	public function get_my_out_document($search_query = '')
+	{
+		return $this->departments->get_out_documents( $search_query );
+	}
 }

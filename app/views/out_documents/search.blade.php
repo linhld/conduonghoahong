@@ -1,9 +1,9 @@
 @extends('layout.main')
 @section('content')
 
-    <h1>tìm kiếm Công văn đến</h1>
+    <h1>tìm kiếm Công văn đi</h1>
 
-   <form class="navbar-form navbar-left" action="{{ URL::route('document-receive-search') }}" method='post' role="search">
+   <form class="navbar-form navbar-left" action="{{ URL::route('document-out-search') }}" method='post' role="search">
 		<div class="form-group">
 			<input type="text" name="query" class="form-control" placeholder="tìm kiếm công văn">
 		</div>
@@ -37,11 +37,11 @@
 						<?php $config_role = Config::get("user.role"); ?>
 								<!-- neu user la Van thu thi hien nut sut va  -->
 						@if( $user_role == $config_role["writer"] )
-							<a class="btn btn-small btn-info" href="{{ URL::route("document-receive-edit", $document->id) }}">Sửa</a>
-							<a class="delete btn btn-small btn-danger" href="{{ URL::route("document-receive-destroy", $document->id ) }}">Xóa</a>
+							<a class="btn btn-small btn-info" href="{{ URL::route("document-out-edit", $document->id) }}">Sửa</a>
+							<a class="delete btn btn-small btn-danger" href="{{ URL::route("document-out-destroy", $document->id ) }}">Xóa</a>
 							<!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
 						@else
-							<a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">xem</a>
+							<a class="btn btn-small btn-info" href="{{ URL::route("document-out-read", $document->id) }}">xem</a>
 						@endif
 					</td>
 				</tr>

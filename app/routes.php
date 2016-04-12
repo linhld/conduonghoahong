@@ -295,7 +295,12 @@ Route::group(array('before' => 'auth'), function() {
 	//TIM KIEM cong
 	Route::get('/search/out',
 		array('as' => 'document-out-search',
-			'uses' => 'OutController@search'
+			'uses' => 'OutDocumentController@search'
+		));
+
+	Route::post('/search/out',
+		array('as' => 'document-out-search',
+			'uses' => 'OutDocumentController@search_result'
 		));
 	
 

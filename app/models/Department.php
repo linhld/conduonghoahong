@@ -33,4 +33,19 @@ class Department extends Eloquent {
 		return array();
 	}
 
+	public function get_out_documents($search_query = '')
+	{
+		$staff_list = $this->get_staff_list()->lists('id');
+
+		$documents = OutDocument::whereIn('send_by', $staff_list);
+
+		if( !empty($documents) )
+		{
+			if( !empty($search_query) )
+				return  $documents->where('title','like','%'.$search_query.'%')
+									->get();
+		}
+
+		return array();
+	}
 }
