@@ -13,7 +13,12 @@ class OutDocument extends Eloquent {
 
 	public static function get_documents($status)
 	{
-		return self::where("status", Config::get('document.out_status')[$status])->get();
+			return self::where("status", Config::get('document.out_status')[$status])->get();
+	}
+
+	public static function search($search_query)
+	{
+		return self::where('title','like','%'.$search_query.'%')->get();
 	}
 
 	public function get_name_of_type()

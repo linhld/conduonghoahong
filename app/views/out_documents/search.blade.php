@@ -22,7 +22,7 @@
 			<tbody>
 			@foreach($documents as $index => $document)
 				<tr>
-					<td>{{ $document->document_code }}</td>
+					<td>{{ $document->document_out_code }}</td>
 					<td>{{ $document->title }}</td>
 					<!-- we will also add show, edit, and delete buttons -->
 					<td>
