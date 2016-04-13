@@ -34,7 +34,7 @@
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-out-read-and-apply", $document->id) }}">Xem</a>
                         <a class="btn btn-small btn-danger" href="{{ URL::route("document-out-action", $document->id ) }}?action=eject">Từ chối</a>
                     @else
-
+                        <a class="btn btn-small btn-info" href="{{ URL::route("document-out-review", $document->id) }}">xem</a>
                     @endif
                 </td>
             </tr>

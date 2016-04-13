@@ -41,8 +41,10 @@
 							<a class="delete btn btn-small btn-danger" href="{{ URL::route("document-out-destroy", $document->id ) }}">Xóa</a>
 							<!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
 						@else
-							<a class="btn btn-small btn-info" href="{{ URL::route("document-out-read", $document->id) }}">xem</a>
+
 						@endif
+
+						<a class="btn btn-small btn-info" href="{{ URL::route("document-out-read", $document->id) }}">xem</a>
 					</td>
 				</tr>
 			@endforeach
