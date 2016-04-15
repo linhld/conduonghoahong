@@ -111,6 +111,13 @@ class OutDocumentController extends BaseController {
 	{
 		$query = Input::get('query');
 
+		if( !$query )
+		{
+			Session::flash('global','Vui lòng nhập vào ô tìm kiếm');
+
+			return Redirect::back();
+		}
+
 		$config_role = Config::get('user.role');
 		$user_role = Auth::user()->role;
 

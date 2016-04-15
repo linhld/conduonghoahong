@@ -23,6 +23,8 @@ class ReceiveDocument extends Eloquent {
 
 	public static function search($query)
 	{
-		return self::where('title', 'like', '%'.$query.'%')->get();
+		return self::where('title', 'like', '%'.$query.'%')
+					->orWhere('document_code', 'like', '%'.$query.'%')
+					->get();
 	}
 }

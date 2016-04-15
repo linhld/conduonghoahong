@@ -191,10 +191,21 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'ReceiveDocumentController@applied'
 		));
 
+	Route::get('/document/receive-sent-staff',
+		array('as' => 'document-receive-sent-staff',
+			'uses' => 'ReceiveDocumentController@sent_staff'
+		));
+
 	//danh sach cac cong van bi tu choi
 	Route::get('/document/receive-read-and-apply/{id}',
 		array('as' => 'document-receive-read-and-apply',
 			'uses' => 'ReceiveDocumentController@read_and_apply'
+		));
+
+	//danh sach cac cong van bi tu choi
+	Route::get('/document/receive-read-and-send-staff/{id}',
+		array('as' => 'document-receive-read-and-send-staff',
+			'uses' => 'ReceiveDocumentController@read_and_send_staff'
 		));
 
 	// danh cho giam doc thuc hien cac tac vu cho cong van den

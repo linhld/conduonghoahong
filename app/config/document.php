@@ -6,6 +6,7 @@ return array(
 		'waiting_apply'    	=> 1,
 		'ejected'    	=> 2,
 		'applied'    	=> 3,
+		'sent_staff'	=> 4,
 	),
 
 	'out_status' => array(

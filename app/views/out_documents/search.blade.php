@@ -11,6 +11,7 @@
 	</form>
 
 	@if( !empty($documents) )
+	@if( count($documents) )
 		<table class="table table-striped table-bordered">
 			<thead>
 			<tr>
@@ -50,5 +51,10 @@
 			@endforeach
 			</tbody>
 		</table>
+	@else
+		<br><br>
+		<h2>không tìm thấy kết quả</h2>
+	@endif
+
 	@endif
 @endsection

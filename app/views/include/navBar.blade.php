@@ -75,7 +75,7 @@
 					@elseif( $user_role == $config_role["staff"])
 							<ul class="nav navbar-nav">
 								<li><a href="{{ URL::route("document-out-create") }}">Soạn CV đi</a></li>
-								<li><a href="{{ URL::route("document-receive-applied") }}">CV gửi cho bạn</a></li>
+								<li><a href="{{ URL::route("document-receive-sent-staff") }}">CV gửi cho bạn</a></li>
 
 								<li><a href="{{ URL::route("document-receive-search") }}">Tìm CV đến</a></li>
 								<li><a href="{{ URL::route("document-out-search") }}">Tìm CV đi</a></li>

@@ -88,6 +88,13 @@ class ReceiveDocumentController extends BaseController {
 	{
 		$query = Input::get('query');
 
+		if( !$query )
+		{
+			Session::flash('global','Vui lòng nhập vào ô tìm kiếm');
+
+			return Redirect::back();
+		}
+
 		$config_role = Config::get('user.role');
 		$user_role = Auth::user()->role;
 
@@ -124,6 +131,18 @@ class ReceiveDocumentController extends BaseController {
 		return View::make('receive_documents.read-and-apply', $data);
 	}
 
+	//văn thư đọc công văn sau khi giám đốc duyệt
+	//và gửi lại cho nhân viên
+	//Tham số đầu vào: id của document được đọc
+	public function read_and_send_staff($document_id)
+	{
+		//
+		$data["document"] = ReceiveDocument::find($document_id);
+
+		$data["document_body"] = View::make('receive_documents.read', $data);
+
+		return View::make('receive_documents.read-and-send-staff', $data);
+	}
 
 	//đọc công văn
 	//Tham số đầu vào: id của document được đọc
@@ -144,7 +163,6 @@ class ReceiveDocumentController extends BaseController {
 
 		switch($action){
 			case "apply":
-
 				//neu nhu status cua cong van nay la dang cho duyet thi moi thuc hien duyet cong van nay
 				if( $document->status == Config::get("document.receive_status")["waiting_apply"] )
 				{
@@ -168,6 +186,7 @@ class ReceiveDocumentController extends BaseController {
 					$document->status = Config::get("document.receive_status")["applied"];
 					$document->save();
 				}
+			break;
 
 			case "eject":
 				//neu nhu status cua cong van nay la dang cho duyet thi moi thuc hien eject cong van nay
@@ -178,7 +197,18 @@ class ReceiveDocumentController extends BaseController {
 
 					Session::flash('global','từ chối Công văn thành công');
 				}
-			case "store":
+			break;
+
+			case "send_staff":
+				//neu nhu status cua cong van nay la da duoc giam doc duyet thi moi thuc hien eject cong van nay
+				if( $document->status == Config::get("document.receive_status")["applied"] )
+				{
+					$document->status = Config::get("document.receive_status")["sent_staff"];
+					$document->save();
+
+					Session::flash('global','Gửi Công văn thành công');
+				}
+			break;
 
 			default:
 
@@ -222,6 +252,16 @@ class ReceiveDocumentController extends BaseController {
 		}
 
 		return View::make('receive_documents.applied', $data);
+	}
+
+
+	//danh sach cong van dang cho duyet
+	public function sent_staff()
+	{
+		//
+		$data["documents"] = ReceiveDocument::get_documents('sent_staff');
+
+		return View::make('receive_documents.sent-staff', $data);
 	}
 
 }

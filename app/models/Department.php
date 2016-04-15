@@ -25,6 +25,7 @@ class Department extends Eloquent {
 			if( !empty($search_query) )
 				return  ReceiveDocument::whereIn('id',$documents)
 							->where('title','like','%'.$search_query.'%')
+							->orWhere('document_code', 'like', '%'.$search_query.'%')
 							->get();
 							
 		   return ReceiveDocument::whereIn('id',$documents)->get();
@@ -41,6 +42,8 @@ class Department extends Eloquent {
 		{
 			if( !empty($search_query) )
 				return  $documents->where('title','like','%'.$search_query.'%')
+									->orWhere('document_out_code', 'like', '%'.$search_query.'%')
+									->orWhere('document_receive_code', 'like', '%'.$search_query.'%')
 									->get();
 		}
 

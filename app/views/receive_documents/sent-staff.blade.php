@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
 
-    <h1>Công văn đến đang chờ duyệt</h1>
+    <h1>Công văn đến gửi cho bạn</h1>
 
     <table class="table table-striped table-bordered">
         <thead>
@@ -32,11 +32,12 @@
                         <a class="delete btn btn-small btn-danger" href="{{ URL::route("document-receive-destroy", $document->id ) }}">Xóa</a>
                         <!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
                     @elseif($user_role== Config::get("user.role")["chef"] )
-                        <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read-and-apply", $document->id) }}">Xem</a>
+
                     @else
-                        <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">Xem</a>
+
                     @endif
 
+                    <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">Xem</a>
                 </td>
             </tr>
         @endforeach

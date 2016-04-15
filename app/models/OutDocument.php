@@ -18,7 +18,10 @@ class OutDocument extends Eloquent {
 
 	public static function search($search_query)
 	{
-		return self::where('title','like','%'.$search_query.'%')->get();
+		return self::where('title','like','%'.$search_query.'%')
+					->orWhere('document_out_code', 'like', '%'.$search_query.'%')
+					->orWhere('document_receive_code', 'like', '%'.$search_query.'%')
+					->get();
 	}
 
 	public function get_name_of_type()
