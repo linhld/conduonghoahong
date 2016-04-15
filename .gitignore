@@ -1,3 +1,4 @@
 Homestead.yaml
 Homestead.json
 .env
+app/config/database.php

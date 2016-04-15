@@ -48,7 +48,9 @@
 								<li><a href="{{ URL::route("document-receive-applied") }}">CV đến đã duyệt</a></li>
 
 
-								<!-- <li><a href="{{ URL::route("document-out-waiting-accept") }}">CV đi đang chờ xem lại</a></li> -->
+								<li><a href="{{ URL::route("document-out-waiting-accept") }}">CV đi đang chờ xem lại</a></li>
+								<li><a href="{{ URL::route("document-out-waiting-apply") }}">CV đi chờ duyệt</a></li>
+
 								<li><a href="{{ URL::route("document-out-applied") }}">CV đi đã duyệt</a></li>
 								<li><a href="{{ URL::route("document-out-ejected") }}">CV đi đã từ chối</a></li>
 

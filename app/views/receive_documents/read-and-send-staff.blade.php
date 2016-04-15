@@ -6,7 +6,7 @@
         <?php echo $document_body ?>
 
         
-        <button class="btn btn-success" type="submit" name="action" value="send_staff"> Duyệt</button>
+        <button class="btn btn-success" type="submit" name="action" value="send_staff"> gửi</button>
 
         {{ Form::token() }}
     </form>

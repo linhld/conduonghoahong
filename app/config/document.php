@@ -10,7 +10,6 @@ return array(
 	),
 
 	'out_status' => array(
-		'waiting_apply'    	=> 1,
 		'ejected'    	=> 2,
 		'applied'    	=> 5,
 		'accepted'    	=> 3,

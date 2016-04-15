@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
 
-    <h1>Công văn đến đang chờ xem lại</h1>
+    <h1>Công văn đi đang chờ xem lại</h1>
 
     <table class="table table-striped table-bordered">
         <thead>
