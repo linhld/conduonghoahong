@@ -16,7 +16,7 @@ class Department extends Eloquent {
 		return $this->hasMany('User','department','id');
 	}
 
-	public function get_receive_documents($search_query = '')
+	public function get_receive_documents($field = '', $search_query = '')
 	{
 		$documents = DocumentDepartment::where('department_id',$this->id)->lists('document_id');
 
@@ -24,8 +24,7 @@ class Department extends Eloquent {
 		{
 			if( !empty($search_query) )
 				return  ReceiveDocument::whereIn('id',$documents)
-							->where('title','like','%'.$search_query.'%')
-							->orWhere('document_code', 'like', '%'.$search_query.'%')
+							->where($field,'like','%'.$search_query.'%')
 							->get();
 							
 		   return ReceiveDocument::whereIn('id',$documents)->get();
@@ -34,16 +33,14 @@ class Department extends Eloquent {
 		return array();
 	}
 
-	public function get_out_documents($search_query = '')
+	public function get_out_documents($field = '', $search_query = '')
 	{
 		$documents = $this->hasMany('OutDocument', 'send_by_department');
 
 		if( !empty($documents) )
 		{
 			if( !empty($search_query) )
-				return  $documents->where('title','like','%'.$search_query.'%')
-									->orWhere('document_out_code', 'like', '%'.$search_query.'%')
-									->orWhere('document_receive_code', 'like', '%'.$search_query.'%')
+				return  $documents->where( $field,'like','%'.$search_query.'%' )
 									->get();
 		}
 

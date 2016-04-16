@@ -16,7 +16,7 @@ class OutDocumentController extends BaseController {
 		// khoi tao doi tuong Document moi de luu vao
 		$out_document = new OutDocument();
 
-		$out_document->document_receive_code 	= Input::get("document_receive_code");
+		//$out_document->document_receive_code 	= Input::get("document_receive_code");
 		$out_document->document_out_code 		= Input::get("document_out_code");
 
 		$out_document->from_department 		= Auth::user()->department;
@@ -71,7 +71,7 @@ class OutDocumentController extends BaseController {
 		$out_document = OutDocument::find($document_id);
 
 		$out_document->document_out_code 		= Input::get("document_out_code");
-		$out_document->document_receive_code 	= Input::get("document_receive_code");
+		//$out_document->document_receive_code 	= Input::get("document_receive_code");
 
 		$out_document->from_department 		= Input::get("from_department");
 		$out_document->from_staff 			= Input::get("from_staff");
@@ -79,7 +79,7 @@ class OutDocumentController extends BaseController {
 		$out_document->to_staff 			= Input::get("to_staff");
 		$out_document->title 				= Input::get("title");
 		$out_document->content 				= Input::get("content");
-		$out_document->time_send 			= Input::get("time_send");
+		//$out_document->time_send 			= Input::get("time_send");
 
 		$out_document->short_content 		= Input::get("short_content");
 		$out_document->document_type 		= Input::get("document_type");
@@ -110,6 +110,7 @@ class OutDocumentController extends BaseController {
 	public function search_result()
 	{
 		$query = Input::get('query');
+		$field = Input::get('field');
 
 		if( !$query )
 		{
@@ -123,11 +124,11 @@ class OutDocumentController extends BaseController {
 
 		if( $user_role == $config_role["writer"] or $user_role == $config_role["chef"] )
 		{
-			$data['documents'] = OutDocument::search( $query );
+			$data['documents'] = OutDocument::search( $field, $query );
 		}
 		else
 		{
-			$data['documents'] = Auth::user()->get_my_out_document( $query );
+			$data['documents'] = Auth::user()->get_my_out_document( $field, $query );
 		}
 		// view and pass the nerds
 		return View::make('out_documents.search',$data);
@@ -187,7 +188,7 @@ class OutDocumentController extends BaseController {
 				if( $document->status == Config::get("document.out_status")["waiting_accept"] )
 				{
 					$document->document_out_code 		= Input::get("document_out_code");
-					$document->document_receive_code 		= Input::get("document_receive_code");
+					//$document->document_receive_code 		= Input::get("document_receive_code");
 
 					$document->from_department 		= Input::get("from_department");
 					$document->from_staff 			= Input::get("from_staff");
@@ -195,7 +196,7 @@ class OutDocumentController extends BaseController {
 					$document->to_staff 			= Input::get("to_staff");
 					$document->title 				= Input::get("title");
 					$document->content 				= Input::get("content");
-					$document->time_send 			= Input::get("time_send");
+					//$document->time_send 			= Input::get("time_send");
 					$document->short_content 		= Input::get("short_content");
 					$document->document_type 		= Input::get("document_type");
 

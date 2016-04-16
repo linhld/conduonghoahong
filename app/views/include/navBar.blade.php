@@ -64,6 +64,10 @@
 									<br>
 									<a href="{{ URL::route("document-out-search") }}">Tìm CV đi</a>
 								</li>
+
+								<li>
+								<a href="{{ URL::route("document-stat") }}">Thống kê</a>
+								</li>
 								
 							</ul>
 

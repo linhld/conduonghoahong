@@ -56,8 +56,8 @@ class ReceiveDocumentController extends BaseController {
 		$receive_document->from_staff 			= Input::get("from_staff");
 		$receive_document->title 				= Input::get("title");
 		$receive_document->content 				= Input::get("content");
-		$receive_document->time_send 			= Input::get("time_send");
-		$receive_document->time_receive 		= Input::get("time_receive");
+		//$receive_document->time_send 			= Input::get("time_send");
+		//$receive_document->time_receive 		= Input::get("time_receive");
 		$receive_document->short_content 		= Input::get("short_content");
 		//luu cong van den
 		$receive_document->save();
@@ -87,6 +87,7 @@ class ReceiveDocumentController extends BaseController {
 	public function search_result()
 	{
 		$query = Input::get('query');
+		$field = Input::get('field');
 
 		if( !$query )
 		{
@@ -100,11 +101,11 @@ class ReceiveDocumentController extends BaseController {
 
 		if( $user_role == $config_role["writer"] or $user_role == $config_role["chef"] )
 		{
-			$data['documents'] = ReceiveDocument::search( $query );
+			$data['documents'] = ReceiveDocument::search( $field, $query );
 		}
 		else
 		{
-			$data['documents'] = Auth::user()->get_receive_applies_document( $query );
+			$data['documents'] = Auth::user()->get_receive_applies_document( $field, $query );
 		}
 		// view and pass the nerds
 		return View::make('receive_documents.search',$data);

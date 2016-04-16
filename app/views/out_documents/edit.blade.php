@@ -3,7 +3,7 @@
 
     <script src="{{ url() }}/ckeditor/ckeditor.js"></script>
 
-    <h3>SỬA CÔNG VĂN ĐẾN</h3>
+    <h3>SỬA CÔNG VĂN ĐI</h3>
     <br>
     <br>
     <form role="form" action="{{ URL::route('document-out-update', $document->id) }}" method="post">
@@ -56,7 +56,7 @@
         </div>
         <div class="form-group">
             <label for="title">Ngày gửi</label>
-            <input type="date" name="time_send" value="{{ $document->time_send }}">
+            <input type="date" disabled name="time_send" value="{{ $document->time_send }}">
         </div>
 
         <div class="form-group">

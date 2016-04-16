@@ -325,6 +325,19 @@ Route::group(array('before' => 'auth'), function() {
 		));
 
 
+	//thong ke
+	Route::get('/stat',
+		array('as' => 'document-stat',
+			'uses' => 'UserController@stat'
+		));
+
+	//thong ke
+	Route::post('/stat',
+		array('as' => 'document-stat',
+			'uses' => 'UserController@stat_result'
+		));
+
+
 });
 
 Route::post('/get_department_staff',

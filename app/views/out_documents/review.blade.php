@@ -28,10 +28,6 @@
             <label for="document_code">Số công văn đi:</label>
             <input type="text" name="document_out_code"  value="{{ $document->document_out_code }}">
         </div>
-        <div class="form-group">
-            <label for="document_code">Số công văn đến:</label>
-            <input type="text" name="document_receive_code"  value="{{ $document->document_receive_code }}">
-        </div>
 
         <div class="form-group">
             <label for="from_department">Đơn vị gửi:</label>

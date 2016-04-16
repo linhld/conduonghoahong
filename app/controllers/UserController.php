@@ -178,4 +178,32 @@ class UserController extends BaseController {
 
 		return Redirect::route('home');
 	}
+
+	public function stat()
+	{
+		return View::make('stat');
+	}
+
+	public function stat_result()
+	{
+		$start_date = Input::get('start_date');
+		$end_date = Input::get('end_date');
+		$document_type = Input::get('document_type');
+		$document = Input::get('document');
+
+		if( $document == 'receive')
+		{
+			$result = ReceiveDocument::get_stat($start_date, $end_date, $document_type);
+		}
+		else
+		{
+			$result = OutDocument::get_stat($start_date, $end_date, $document_type);
+		}
+
+		$data['report'] = "Có $result công văn.";
+
+		Session::flash ("_old_input",Input::all() );
+
+		return View::make('stat', $data)->with('input',Input::all());
+	}
 }

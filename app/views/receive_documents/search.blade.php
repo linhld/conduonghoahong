@@ -6,8 +6,15 @@
    <form class="navbar-form navbar-left" action="{{ URL::route('document-receive-search') }}" method='post' role="search">
 		<div class="form-group">
 			<input type="text" name="query" class="form-control" placeholder="tìm kiếm công văn">
+			<select name="field">
+				<option value="document_code">Số CV</option>
+				<option value="title">Tiêu đề</option>
+				<option value="time_receive">Ngày nhận</option>
+			</select>
 		</div>
-		<button type="submit" class="btn btn-default">Tìm</button>
+		<button type="submit" class="btn btn-default">Tìm</button> 
+		<br>
+		 ( tìm theo ngày thì định dạng: 2016-05-25 )
 	</form>
 
 	@if( !empty($documents) )
