@@ -19,43 +19,43 @@
 
         <div class="form-group">
             <label for="document_code">Số công văn đi:</label>
-            <input type="text" name="document_out_code">
+            <input type="text" name="document_out_code" value="{{ Input::old('document_out_code') }}">
         </div>
 
         <div class="form-group">
             <label for="from_department">Đơn vị gửi:</label>
-            <input type="text" name="from_department">
+            <input type="text" name="from_department" value="{{ Input::old('from_department') }}">
         </div>
         <div class="form-group">
             <label for="from_staff"> Người gửi:</label>
-            <input type="text" name="from_staff">
+            <input type="text" name="from_staff" value="{{ Input::old('from_staff') }}">
         </div>
 
         <div class="form-group">
             <label for="from_department">Đơn vị nhận :</label>
-            <input type="text" name="to_department">
+            <input type="text" name="to_department" value="{{ Input::old('to_department') }}">
         </div>
         <div class="form-group">
             <label for="from_staff"> Người nhận:</label>
-            <input type="text" name="to_staff">
+            <input type="text" name="to_staff" value="{{ Input::old('to_staff') }}">
         </div>
 
         <div class="form-group">
             <label for="title">Tiêu đề:</label>
-            <input type="text" name="title">
+            <input type="text" name="title" value="{{ Input::old('title') }}">
         </div>
         <div class="form-group">
             <label for="content">Nội dung:</label>
-            <textarea type="text" name="content" id="content"></textarea>
+            <textarea type="text" name="content" id="content">{{ Input::old('content') }}</textarea>
         </div>
         <div class="form-group">
             <label for="title">Ngày gửi</label>
-            <input type="date" name="time_send">
+            <input type="date" name="time_send" value="{{ Input::old('time_send') }}">
         </div>
 
         <div class="form-group">
             <label for="title">Trích yếu</label>
-            <input type="text" name="short_content">
+            <input type="text" name="short_content" value="{{ Input::old('short_content') }}">
         </div>
 
         <input class="btn btn-success" type="submit" value="Tạo công văn đi">

@@ -12,6 +12,17 @@ class OutDocumentController extends BaseController {
 	//ham dung de luu tru cong van
 	public function store()
 	{
+		$rules = array();
+
+		foreach( Input::all() as $key => $val)
+		  {
+		    if( $val == '' )
+		    {
+		    	Session::flash('global', 'vui lòng nhập thông tin đầy đủ');
+
+		    	return Redirect::back()->withInput();
+		    }
+		  }
 		//
 		// khoi tao doi tuong Document moi de luu vao
 		$out_document = new OutDocument();
@@ -67,6 +78,17 @@ class OutDocumentController extends BaseController {
 	public function update($document_id)
 	{
 		//
+		$rules = array();
+
+		foreach( Input::all() as $key => $val)
+		  {
+		    if( $val == '' )
+		    {
+		    	Session::flash('global', 'vui lòng nhập thông tin đầy đủ');
+
+		    	return Redirect::back()->withInput();
+		    }
+		  }
 		// khoi tao doi tuong Document moi de luu vao
 		$out_document = OutDocument::find($document_id);
 

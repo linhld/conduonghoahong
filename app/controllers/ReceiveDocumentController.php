@@ -12,7 +12,19 @@ class ReceiveDocumentController extends BaseController {
 	//ham dung de luu tru cong van
 	public function store()
 	{
-		//
+		$rules = array();
+
+		foreach( Input::all() as $key => $val)
+		  {
+		    if( $val == '' )
+		    {
+		    	Session::flash('global', 'vui lòng nhập thông tin đầy đủ');
+
+		    	return Redirect::back()->withInput();
+		    }
+		  }
+
+				//
 		// khoi tao doi tuong Document moi de luu vao
 		$receive_document = new ReceiveDocument();
 
@@ -47,6 +59,17 @@ class ReceiveDocumentController extends BaseController {
 	//ham dung de luu tru cong van khi update
 	public function update($document_id)
 	{
+		$rules = array();
+
+		foreach( Input::all() as $key => $val)
+		  {
+		    if( $val == '' )
+		    {
+		    	Session::flash('global', 'vui lòng nhập thông tin đầy đủ');
+
+		    	return Redirect::back()->withInput();
+		    }
+		  }
 		//
 		// khoi tao doi tuong Document moi de luu vao
 		$receive_document = ReceiveDocument::find($document_id);
