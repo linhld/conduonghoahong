@@ -6,7 +6,7 @@
     <h3>SOẠN CÔNG VĂN ĐẾN</h3>
     <br>
     <br>
-    <form role="form" action="{{ URL::route('document-receive-store') }}" method="post">
+    <form role="form" action="{{ URL::route('document-receive-store') }}" method="post" enctype="multipart/form-data">
 
         <div class="form-group">
             <label 4for="document_type">Loại công văn:</label>
@@ -52,6 +52,11 @@
             <input type="text" name="short_content" value="{{ Input::old('short_content') }}">
         </div>
 
+         <div class="form-group">
+            <label for="title">Văn bản gốc:</label>
+           <input type="file" name="origin_document" accept="application/pdf,application/msword,
+  application/vnd.ms-powerpoint,.docx,image/*">
+        </div>
 
         <input class="btn btn-success" type="submit" value="Tạo công văn đến">
         {{ Form::token() }}

@@ -40,6 +40,15 @@ class ReceiveDocumentController extends BaseController {
 		//Cap nhat trang thai cua no la dang cho xu li
 		$receive_document->status				= Config::get("document.receive_status")["waiting_apply"];
 		//luu cong van den
+		//tai cong van goc len
+		$origin_document = Input::file('origin_document');
+		//xac dinh noi luu tru cua cong van goc
+		$destinationPath = public_path().'/origin_receive/';
+		$filename = $origin_document->getClientOriginalName();
+
+		$origin_document->move($destinationPath, $filename);
+
+		$receive_document->origin_document = $filename;
 		$receive_document->save();
 
 		Session::flash('global','Tạo Công văn thành công');

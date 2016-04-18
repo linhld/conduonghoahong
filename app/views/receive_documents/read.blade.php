@@ -41,6 +41,8 @@
             {{ $document->short_content }}
         </div>
 
+        <a href="{{ url() }}/ViewerJS/#../{{ public_path().'receive/'. $document->origin_document }}">d</a>
+
     <script>
         // Replace the <textarea id="editor1"> with a CKEditor
         // instance, using default configuration.
