@@ -2,20 +2,398 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4acd5d84-9f97-4ccd-87a5-dea8ccb4576c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/receive_documents/sent-staff.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdf.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/78-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/78-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/78-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/78-RKSJ-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/78-RKSJ-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/78-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/78ms-RKSJ-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/78ms-RKSJ-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/83pv-RKSJ-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/90ms-RKSJ-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/90ms-RKSJ-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/90msp-RKSJ-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/90msp-RKSJ-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/90pv-RKSJ-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/90pv-RKSJ-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Add-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Add-RKSJ-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Add-RKSJ-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Add-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-CNS1-0.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-CNS1-1.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-CNS1-2.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-CNS1-3.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-CNS1-4.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-CNS1-5.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-CNS1-6.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-CNS1-UCS2.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-GB1-0.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-GB1-1.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-GB1-2.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-GB1-3.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-GB1-4.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-GB1-5.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-GB1-UCS2.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Japan1-0.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Japan1-1.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Japan1-2.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Japan1-3.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Japan1-4.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Japan1-5.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Japan1-6.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Japan1-UCS2.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Korea1-0.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Korea1-1.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Korea1-2.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Adobe-Korea1-UCS2.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/B5pc-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/B5pc-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/CNS-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/CNS-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/CNS1-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/CNS1-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/CNS2-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/CNS2-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/ETHK-B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/ETHK-B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/ETen-B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/ETen-B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/ETenms-B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/ETenms-B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Ext-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Ext-RKSJ-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Ext-RKSJ-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Ext-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GB-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GB-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GB-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GB-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBK-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBK-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBK2K-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBK2K-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBKp-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBKp-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBT-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBT-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBT-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBT-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBTpc-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBTpc-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBpc-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/GBpc-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKdla-B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKdla-B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKdlb-B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKdlb-B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKgccs-B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKgccs-B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKm314-B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKm314-B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKm471-B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKm471-B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKscs-B5-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/HKscs-B5-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Hankaku.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Hiragana.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSC-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSC-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSC-Johab-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSC-Johab-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSCms-UHC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSCms-UHC-HW-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSCms-UHC-HW-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSCms-UHC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSCpc-EUC-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/KSCpc-EUC-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Katakana.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/NWP-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/NWP-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/RKSJ-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/RKSJ-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/Roman.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniCNS-UCS2-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniCNS-UCS2-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniCNS-UTF16-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniCNS-UTF16-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniCNS-UTF32-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniCNS-UTF32-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniCNS-UTF8-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniCNS-UTF8-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniGB-UCS2-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniGB-UCS2-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniGB-UTF16-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniGB-UTF16-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniGB-UTF32-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniGB-UTF32-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniGB-UTF8-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniGB-UTF8-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UCS2-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UCS2-HW-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UCS2-HW-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UCS2-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UTF16-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UTF16-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UTF32-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UTF32-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UTF8-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS-UTF8-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS2004-UTF16-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS2004-UTF16-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS2004-UTF32-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS2004-UTF32-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS2004-UTF8-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJIS2004-UTF8-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJISPro-UCS2-HW-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJISPro-UCS2-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJISPro-UTF8-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJISX0213-UTF32-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJISX0213-UTF32-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJISX02132004-UTF32-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniJISX02132004-UTF32-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniKS-UCS2-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniKS-UCS2-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniKS-UTF16-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniKS-UTF16-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniKS-UTF32-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniKS-UTF32-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniKS-UTF8-H.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/UniKS-UTF8-V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/V.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/WP-Symbol.bcmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/compressed.tracemonkey-pldi-09.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/findbarButton-next-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/findbarButton-next-rtl@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/findbarButton-next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/findbarButton-next@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/findbarButton-previous-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/findbarButton-previous-rtl@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/findbarButton-previous.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/findbarButton-previous@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/grab.cur" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/grabbing.cur" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/loading-icon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/loading-small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/loading-small@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-documentProperties.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-documentProperties@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-firstPage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-firstPage@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-handTool.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-handTool@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-lastPage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-lastPage@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-rotateCcw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-rotateCcw@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-rotateCw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/secondaryToolbarButton-rotateCw@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/texture.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-bookmark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-bookmark@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-download@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-menuArrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-menuArrows@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-openFile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-openFile@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-pageDown-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-pageDown-rtl@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-pageDown.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-pageDown@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-pageUp-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-pageUp-rtl@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-pageUp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-pageUp@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-presentationMode.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-presentationMode@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-print.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-print@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-search@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-secondaryToolbarToggle-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-secondaryToolbarToggle-rtl@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-secondaryToolbarToggle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-secondaryToolbarToggle@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-sidebarToggle-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-sidebarToggle-rtl@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-sidebarToggle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-sidebarToggle@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-viewAttachments.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-viewAttachments@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-viewOutline-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-viewOutline-rtl@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-viewOutline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-viewOutline@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-viewThumbnail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-viewThumbnail@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-zoomIn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-zoomIn@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-zoomOut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/toolbarButton-zoomOut@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/treeitem-collapsed-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/treeitem-collapsed-rtl@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/treeitem-collapsed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/treeitem-collapsed@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/treeitem-expanded.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/treeitem-expanded@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/bn-BD/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/el/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/hi-IN/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/km/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/kn/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ml/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/pa-IN/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/sah/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/si/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/sr/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/th/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/cmaps/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/debugger.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/annotation-check.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/annotation-comment.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/annotation-help.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/annotation-insert.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/annotation-key.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/annotation-newparagraph.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/annotation-noicon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/annotation-note.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/images/annotation-paragraph.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/l10n.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ach/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/af/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ak/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/an/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ar/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/as/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ast/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/az/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/be/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/bg/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/bn-IN/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/br/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/bs/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ca/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/cs/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/csb/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/cy/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/da/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/de/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/en-GB/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/en-US/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/en-ZA/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/eo/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/es-AR/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/es-CL/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/es-ES/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/es-MX/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/et/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/eu/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/fa/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ff/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/fi/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/fr/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/fy-NL/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ga-IE/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/gd/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/gl/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/gu-IN/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/he/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/hr/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/hu/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/hy-AM/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/id/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/is/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/it/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ja/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ka/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/kk/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ko/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ku/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/lg/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/lij/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/locale.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/lt/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/lv/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/mai/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/mk/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/mn/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/mr/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ms/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/my/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/nb-NO/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/nl/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/nn-NO/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/nso/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/oc/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/or/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/pl/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/pt-BR/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/pt-PT/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/rm/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ro/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ru/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/rw/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/sk/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/sl/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/son/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/sq/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/sv-SE/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/sw/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ta-LK/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ta/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/te/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/tl/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/tn/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/tr/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/uk/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/ur/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/vi/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/wo/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/xh/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/zh-CN/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/zh-TW/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/locale/zu/viewer.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/viewer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/viewer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pdfjs/web/viewer.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/example.local.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/kogmbh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/nlnet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/texture.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/toolbarButton-download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/toolbarButton-fullscreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/toolbarButton-menuArrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/toolbarButton-pageDown.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/toolbarButton-pageUp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/toolbarButton-presentation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/toolbarButton-zoomIn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/images/toolbarButton-zoomOut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/pdfjsversion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/text_layer_builder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/ui_utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/ViewerJS/webodf.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/ViewerJS/compatibility.js" afterPath="$PROJECT_DIR$/public/pdfjs/web/compatibility.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/ViewerJS/pdf.js" afterPath="$PROJECT_DIR$/public/pdfjs/build/pdf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/ViewerJS/pdf.worker.js" afterPath="$PROJECT_DIR$/public/pdfjs/build/pdf.worker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/document.php" afterPath="$PROJECT_DIR$/app/config/document.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/OutDocumentController.php" afterPath="$PROJECT_DIR$/app/controllers/OutDocumentController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ReceiveDocumentController.php" afterPath="$PROJECT_DIR$/app/controllers/ReceiveDocumentController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Department.php" afterPath="$PROJECT_DIR$/app/models/Department.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/OutDocument.php" afterPath="$PROJECT_DIR$/app/models/OutDocument.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ReceiveDocument.php" afterPath="$PROJECT_DIR$/app/models/ReceiveDocument.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/include/navBar.blade.php" afterPath="$PROJECT_DIR$/app/views/include/navBar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/out_documents/search.blade.php" afterPath="$PROJECT_DIR$/app/views/out_documents/search.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/receive_documents/applied.blade.php" afterPath="$PROJECT_DIR$/app/views/receive_documents/applied.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/receive_documents/search.blade.php" afterPath="$PROJECT_DIR$/app/views/receive_documents/search.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/receive_documents/waiting-apply.blade.php" afterPath="$PROJECT_DIR$/app/views/receive_documents/waiting-apply.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/out_documents/create.blade.php" afterPath="$PROJECT_DIR$/app/views/out_documents/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/out_documents/read.blade.php" afterPath="$PROJECT_DIR$/app/views/out_documents/read.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/receive_documents/read.blade.php" afterPath="$PROJECT_DIR$/app/views/receive_documents/read.blade.php" />
     </list>
     <ignored path="unko.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +423,8 @@
       <file leaf-file-name="ReceiveDocumentController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ReceiveDocumentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5882354">
-              <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="95" selection-end-column="9" />
+            <state vertical-scroll-proportion="-25.0">
+              <caret line="51" column="34" selection-start-line="41" selection-start-column="8" selection-end-line="51" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -55,8 +433,8 @@
       <file leaf-file-name="OutDocumentController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/OutDocumentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.9411764">
-              <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+            <state vertical-scroll-proportion="-10.588235">
+              <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -65,19 +443,73 @@
       <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/receive_documents/search.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="28" />
+            <state vertical-scroll-proportion="-8.125">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/out_documents/search.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0625">
-              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            <state vertical-scroll-proportion="-2.2083333">
+              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/receive_documents/read.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.5">
+              <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#canvas#0;n#div#10;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/receive_documents/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.375">
+              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="59" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/out_documents/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.125">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/out_documents/read.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34701493">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#canvas#0;n#div#12;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +541,6 @@
         <option value="$PROJECT_DIR$/app/views/documents/receive-waiting-apply.blade.php" />
         <option value="$PROJECT_DIR$/app/views/documents/receive-edit.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/DocumentController.php" />
-        <option value="$PROJECT_DIR$/app/views/receive_documents/read.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/DepartmentController.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_12_27_071938_createDocumentDepartmentTable.php" />
         <option value="$PROJECT_DIR$/app/views/receive_documents/read-and-apply.blade.php" />
@@ -117,16 +548,13 @@
         <option value="$PROJECT_DIR$/app/views/layout/main.blade.php" />
         <option value="$PROJECT_DIR$/app/views/receive_documents/staff-read.blade.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_12_26_071938_createReceiveDocumentTable.php" />
-        <option value="$PROJECT_DIR$/app/views/out_documents/create.blade.php" />
         <option value="$PROJECT_DIR$/app/views/receive_documents/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/views/out_documents/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/views/out_documents/review.blade.php" />
         <option value="$PROJECT_DIR$/app/views/receive_documents/ejected.blade.php" />
         <option value="$PROJECT_DIR$/app/views/out_documents/ejected.blade.php" />
         <option value="$PROJECT_DIR$/app/views/out_documents/read-and-apply.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/out_documents/read.blade.php" />
         <option value="$PROJECT_DIR$/app/views/out_documents/applied.blade.php" />
-        <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/views/departments/index.blade.php" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2016_12_26_071938_createOutDocumentTable.php" />
@@ -143,9 +571,13 @@
         <option value="$PROJECT_DIR$/app/views/receive_documents/read-and-send-staff.blade.php" />
         <option value="$PROJECT_DIR$/app/views/include/navBar.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/ReceiveDocumentController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/OutDocumentController.php" />
         <option value="$PROJECT_DIR$/app/views/receive_documents/search.blade.php" />
         <option value="$PROJECT_DIR$/app/views/out_documents/search.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/database.php" />
+        <option value="$PROJECT_DIR$/app/views/out_documents/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/OutDocumentController.php" />
+        <option value="$PROJECT_DIR$/app/views/receive_documents/read.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/out_documents/read.blade.php" />
       </list>
     </option>
   </component>
@@ -159,10 +591,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="303" />
-    <option name="y" value="179" />
-    <option name="width" value="1757" />
-    <option name="height" value="985" />
+    <option name="x" value="151" />
+    <option name="y" value="117" />
+    <option name="width" value="1632" />
+    <option name="height" value="946" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -189,6 +621,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -467,7 +900,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -535,15 +967,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="303" y="179" width="1757" height="985" extended-state="0" />
+    <frame x="151" y="117" width="1632" height="946" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30962098" sideWeight="0.5" order="2" side_tool="true" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27044025" sideWeight="0.5" order="2" side_tool="true" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22798833" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22830188" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -681,13 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/receive_documents/read.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_12_26_071938_createReceiveDocumentTable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.625">
@@ -699,13 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -730,26 +1148,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/receive_documents/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="54" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/receive_documents/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.541666">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/receive_documents/ejected.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.875">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,15 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.125">
           <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/out_documents/read.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,15 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/out_documents/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="52" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.0">
           <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,7 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.75">
           <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.875">
           <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,7 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.625">
           <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,7 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.375">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,7 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.375">
           <caret line="31" column="116" selection-start-line="31" selection-start-column="116" selection-end-line="31" selection-end-column="116" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,7 +1264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0">
           <caret line="8" column="102" selection-start-line="8" selection-start-column="102" selection-end-line="8" selection-end-column="102" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.0">
           <caret line="193" column="4" selection-start-line="193" selection-start-column="4" selection-end-line="196" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,7 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.25">
           <caret line="77" column="81" selection-start-line="77" selection-start-column="81" selection-end-line="77" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +1285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3529413">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,39 +1292,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.25">
           <caret line="26" column="70" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/out_documents/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2083333">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/receive_documents/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.048507463">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="54" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/receive_documents/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.375">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/out_documents/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ReceiveDocumentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5882354">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="95" selection-end-column="9" />
+        <state vertical-scroll-proportion="-25.0">
+          <caret line="51" column="34" selection-start-line="41" selection-start-column="8" selection-end-line="51" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/OutDocumentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.9411764">
-          <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+        <state vertical-scroll-proportion="-10.588235">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/receive_documents/search.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="28" />
+        <state vertical-scroll-proportion="-8.125">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/out_documents/search.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/receive_documents/read.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0625">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
+        <state vertical-scroll-proportion="-23.5">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#div#10;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/out_documents/read.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34701493">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#div#12;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

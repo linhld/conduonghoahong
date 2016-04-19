@@ -58,6 +58,13 @@
             <input type="text" name="short_content" value="{{ Input::old('short_content') }}">
         </div>
 
+        <div class="form-group">
+            <label for="title">Văn bản gốc:</label>
+            <input type="file" name="origin_document" accept="application/pdf,application/msword,
+  application/vnd.ms-powerpoint,.docx,image/*">
+        </div>
+
+
         <input class="btn btn-success" type="submit" value="Tạo công văn đi">
 
         {{ Form::token() }}
