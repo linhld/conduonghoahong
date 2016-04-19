@@ -53,11 +53,13 @@
             <button id="prev" onclick="return false;">trước</button>
             <button id="next" onclick="return false;">sau</button>
             &nbsp; &nbsp;
-            <span>Trang: <span id="page_num">1</span> / <span id="page_count">14</span></span>
+            <span>Trang: <span id="page_num"></span> / <span id="page_count"></span></span>
         </div>
 
         <div>
+     
             <canvas id="the-canvas" style="border:1px solid black" height="633" width="489"></canvas>
+      
         </div>
 
         <script src="{{ url() }}/pdfjs/build/pdf.js"></script>
