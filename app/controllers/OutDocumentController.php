@@ -30,23 +30,23 @@ class OutDocumentController extends BaseController {
 		//$out_document->document_receive_code 	= Input::get("document_receive_code");
 		$out_document->document_out_code 		= Input::get("document_out_code");
 
-		$out_document->from_department 		= Auth::user()->department;
-		$out_document->from_staff 			= Auth::id();
+		// $out_document->from_department 		= Auth::user()->department;
+		// $out_document->from_staff 			= Auth::id();
 
-		$out_document->to_department 		= Input::get("to_department");
-		$out_document->to_staff 			= Input::get("to_staff");
+		// $out_document->to_department 		= Input::get("to_department");
+		// $out_document->to_staff 			= Input::get("to_staff");
 
 		$out_document->title 				= Input::get("title");
 		$out_document->content 				= Input::get("content");
 		$out_document->time_send 			= Input::get("time_send");
 		$out_document->short_content 		= Input::get("short_content");
-		$out_document->document_type 		= Input::get("document_type");
+		// $out_document->document_type 		= Input::get("document_type");
 		//Cap nhat trang thai cua no la dang cho xu li
 		// $out_document->status				= Config::get("document.out_status")["waiting_accept"];
 		$out_document->status				= Config::get("document.out_status")["waiting_accept"];
 		//ghi lai xem cong van nay dpuoc gui boi nguoi nao
 		$out_document->send_by				= Auth::id();
-		$out_document->send_by_department	= Auth::user()->department;
+		// $out_document->send_by_department	= Auth::user()->department;
 
 		//luu cong van den
 		//tai cong van goc len

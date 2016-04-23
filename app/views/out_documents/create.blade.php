@@ -6,38 +6,11 @@
     <h3>SOẠN CÔNG VĂN ĐI</h3>
     <br>
     <br>
-    <form role="form" action="{{ URL::route('document-out-store') }}" method="post">
-
-        <div class="form-group">
-            <label 4for="document_type">Loại công văn:</label>
-            <select name="document_type" id="document_type">
-                @foreach( DB::table('document_types')->get() as $document_type )
-                    <option value="{{ $document_type->id }}">{{ $document_type->name }}</option>
-                @endforeach
-            </select>
-        </div>
+    <form role="form" action="{{ URL::route('document-out-store') }}" method="post" enctype="multipart/form-data">
 
         <div class="form-group">
             <label for="document_code">Số công văn đi:</label>
             <input type="text" name="document_out_code" value="{{ Input::old('document_out_code') }}">
-        </div>
-
-        <div class="form-group">
-            <label for="from_department">Đơn vị gửi:</label>
-            <input type="text" name="from_department" value="{{ Input::old('from_department') }}">
-        </div>
-        <div class="form-group">
-            <label for="from_staff"> Người gửi:</label>
-            <input type="text" name="from_staff" value="{{ Input::old('from_staff') }}">
-        </div>
-
-        <div class="form-group">
-            <label for="from_department">Đơn vị nhận :</label>
-            <input type="text" name="to_department" value="{{ Input::old('to_department') }}">
-        </div>
-        <div class="form-group">
-            <label for="from_staff"> Người nhận:</label>
-            <input type="text" name="to_staff" value="{{ Input::old('to_staff') }}">
         </div>
 
         <div class="form-group">
