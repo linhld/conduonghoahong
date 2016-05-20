@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="row">
-<div class="medium-6 small-10 small-centered columns rightLogin homeRight">
+<div class="col-xs-6 row-centered">
 
 	
 	<br><br>

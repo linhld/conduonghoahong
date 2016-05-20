@@ -12,8 +12,8 @@
 	margin-top: 100px;
 }
 .panel-login>.panel-heading {
-	color: #00415d;
-	background-color: #fff;
+	color: #C8E0EA;
+
 	border-color: #fff;
 	text-align:center;
 }
@@ -112,11 +112,11 @@
 
     	<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<div class="panel panel-login">
+				<div class="panel panel-login panel-primary">
 					<div class="panel-heading">
 						<div class="row">
 							<div class="col-xs-6">
-								<a href="#" class="active" id="login-form-link">Đăng nhập</a>
+								<h3>Đăng nhập</h3>
 							</div>
 				
 						</div>
