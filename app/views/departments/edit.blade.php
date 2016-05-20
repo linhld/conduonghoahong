@@ -1,14 +1,16 @@
 @extends('layout.main')
 @section('content')
 
-    <form action="{{ URL::route('departments-update', $department->id ) }}" method="post">
-
-        <div class="field">
-            Tên: <input type="text" name="name" value="{{ $department->name }}">
+ <form action="{{ URL::route('departments-update', $department->id ) }}" method="post">
+<div class="form-group">
+    <div class="field">
+     Tên phòng ban: <input type="text" name="name" class="form-control" style="width: 250px;" value="{{ $department->name }}">
         </div>
-
-        <input class="button success" type="submit" value="Cập nhật">
+</div>
+<div class="form-group">
+        <input class="btn btn-success" type="submit" value="Cập nhật">
         {{ Form::token() }}
-    </form>
+ </div>
+</form>
 
 @endsection

@@ -9,7 +9,7 @@
         <tr>
             <td>Mã phòng ban</td>
             <td>Tên</td>
-            <td>Sửa/ xóa</td>
+            <td>Sửa/ Xóa</td>
         </tr>
         </thead>
         <tbody>

@@ -6,7 +6,7 @@
         <?php echo $document_body ?>
 
         <br>
-            Chọn phòng ban xử lí công văn 
+            Chọn phòng ban xử lý công văn 
          <br>   
         <br>
 
@@ -17,8 +17,8 @@
 
         <br>
         
-        <button class="btn btn-success" type="submit" name="action" value="apply"> Duyệt</button>
-            <button class="btn btn-alert" type="submit" name="action" value="eject">từ chối</button>
+        <button class="btn xetduyet btn-success" type="submit" name="action" value="apply"> Duyệt</button>
+            <button class="btn btn-alert" type="submit" name="action" value="eject">Từ chối</button>
 
         {{ Form::token() }}
     </form>

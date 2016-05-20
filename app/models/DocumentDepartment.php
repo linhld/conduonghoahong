@@ -11,5 +11,7 @@ class DocumentDepartment extends Eloquent {
 	 */
 	protected $table = 'document_department';
 
+	
+
 	public $timestamps = false;
 }

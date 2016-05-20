@@ -8,16 +8,18 @@
 
 		@if (Session::has('global'))
 
-			<div class="row">
-				<div  class="message row col-xs-4 row-centered" style="color: white; background: red;">
+			
+			
+			<div   class="alert alert-info" style="color: #fcf8e3;
+    												background-color: #2289E2;
+    												border-color: #bce8f1;
+    												margin-left: 550px;
+    												margin-right: 550px">
 					{{ Session::get('global') }}
-				</div>
-			</div>
-			<br>
-
+             </div>
 		@endif
 
-		<div class="row row-centered col-xs-8">
+		<div class="row row-centered col-xs-12">
 			@yield('content')
 		</div>
 </body>

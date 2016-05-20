@@ -53,7 +53,7 @@ class UserController extends BaseController {
 
 		$user->save();
 
-		Session::flash('global','Tạo tài khoản thành công');
+		Session::flash('global','Tạo tài khoản thành công !');
 
 		return Redirect::route("users-index");
 	}
@@ -96,7 +96,7 @@ class UserController extends BaseController {
 
 		$user->save();
 
-		Session::flash('global','cập nhật tài khoản thành công');
+		Session::flash('global','Cập nhật tài khoản thành công !');
 
 		return Redirect::route("users-index");
 	}
@@ -114,7 +114,7 @@ class UserController extends BaseController {
 		//xoa phong ban nay
 		$User->delete();
 
-		Session::flash('global','xóa tài khoản thành công');
+		Session::flash('global','Xóa tài khoản thành công !');
 
 		return Redirect::route("users-index");
 	}

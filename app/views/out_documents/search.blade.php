@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
 
-    <h1>tìm kiếm Công văn đi</h1>
+    <h1>Tìm kiếm Công văn đi</h1>
 
    <form class="navbar-form navbar-left" action="{{ URL::route('document-out-search') }}" method='post' role="search">
 		<div class="form-group">
@@ -14,7 +14,7 @@
 		</div>
 		<button type="submit" class="btn btn-default">Tìm</button>
 		<br>
-		 ( tìm theo ngày thì định dạng: 2016-05-25 )
+		 ( Tìm theo ngày thì định dạng: 2016-05-25 )
 	</form>
 
 	@if( !empty($documents) )
@@ -60,7 +60,7 @@
 		</table>
 	@else
 		<br><br>
-		<h2>không tìm thấy kết quả</h2>
+		<h2>Không tìm thấy kết quả</h2>
 	@endif
 
 	@endif

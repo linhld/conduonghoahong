@@ -3,7 +3,7 @@
 
     <script src="{{ url() }}/ckeditor/ckeditor.js"></script>
 
-    <h3>SỬA CÔNG VĂN ĐẾN</h3>
+    <h3>SỬA THÔNG TIN CÔNG VĂN ĐẾN</h3>
     <br>
     <br>
     <form role="form" action="{{ URL::route('document-receive-update', $document->id) }}" method="post">
@@ -56,7 +56,7 @@
 
         @if( Auth::user()->role == Config::get("user.role")["staff"] )
             <div class="form-group">
-                <label for="to_department">Đơn vị xử lí</label>
+                <label for="to_department">Đơn vị xử lý</label>
                 <select name="to_department" id="to_department">
                     @foreach( Department::all() as $document )
                         <option value="{{ $document->id }}">{{ $document->name }}</option>
@@ -65,7 +65,7 @@
             </div>
 
             <div class="form-group">
-                <label for="to_staff">Người xử lí</label>
+                <label for="to_staff">Người xử lý</label>
                 <select name="to_staff" id="to_staff">
                 </select>
             </div>

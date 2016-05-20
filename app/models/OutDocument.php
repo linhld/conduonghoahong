@@ -10,6 +10,7 @@ class OutDocument extends Eloquent {
 	 * @var string
 	 */
 	protected $table = 'out_documents';
+	
 
 	public static function get_documents($status)
 	{

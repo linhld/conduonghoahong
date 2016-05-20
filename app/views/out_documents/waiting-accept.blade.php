@@ -8,7 +8,7 @@
         <tr>
             <td>Số công văn đi</td>
             <td>Tiêu đề</td>
-            <td>duyệt</td>
+            <td>Duyệt</td>
         </tr>
         </thead>
         <tbody>

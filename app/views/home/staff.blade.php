@@ -4,5 +4,4 @@
 
 @section('content')
 
-	fdsfdsfs
 @stop

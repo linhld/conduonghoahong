@@ -8,7 +8,7 @@
     <tr>
         <td>Mã user</td>
         <td>Tên</td>
-        <td>Sửa/ xóa</td>
+        <td>Cập nhật</td>
     </tr>
     </thead>
     <tbody>

@@ -1,14 +1,15 @@
 @extends('layout.main')
 @section('content')
 
-    <h1>Công văn đến đang chờ duyệt</h1>
+    <h1 style="margin-left: 350px;
+                margin-right: 350px;">Công văn đến đang chờ duyệt</h1>
 
     <table class="table table-striped table-bordered">
         <thead>
         <tr>
             <td>Số công văn</td>
             <td>Tiêu đề</td>
-            <td>duyệt</td>
+            <td>Duyệt</td>
         </tr>
         </thead>
         <tbody>

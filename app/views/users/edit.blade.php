@@ -4,27 +4,27 @@
     <form role='form' action="{{ URL::route('users-update', $user->id ) }}" method="post">
 
         <div class="form-group">
-            <label for="name"> tên:</label>
+            <label for="name"> Tên:</label>
             <input type="text" name="name" value="{{ $user->name }}">
         </div>
 
         <div class="form-group">
-           <label for="password"> email:</label>
+           <label for="password"> Email:</label>
            <input type="text" name="email" value="{{ $user->email }}">
         </div>
 
         <div class="form-group">
-            <label for="password"> SDT:</label>
+            <label for="password"> SĐT:</label>
             <input type="text" name="tel" value="{{ $user->tel }}">
         </div>
 
         <div class="form-group">
-            <label for="password"> ngày sinh:</label>
+            <label for="password"> Ngày sinh:</label>
             <input type="date" name="birth_date" value="{{ $user->birth_date }}">
         </div>
 
         <div class="form-group">
-            <label for="password"> giới tính:</label>
+            <label for="password"> Giới tính:</label>
             <select name="gender">
                 <option
                 	@if( $user->gender == Config::get('user.gender')['male'] )

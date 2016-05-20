@@ -20,6 +20,25 @@ $(document).ready(function(){
 	      }
 	});
 
+	$('.phathanh').click(function (e){
+
+	   var answer = confirm("Bạn có muốn phát hành không?");
+	      if (answer) {
+	         return true;
+	      }else{
+	         return false;
+	      }
+	});
+
+	$('.xetduyet').click(function (e){
+
+	   var answer = confirm("Bạn có muốn xét duyệt không?");
+	      if (answer) {
+	         return true;
+	      }else{
+	         return false;
+	      }
+	});
 });
 </script>
 

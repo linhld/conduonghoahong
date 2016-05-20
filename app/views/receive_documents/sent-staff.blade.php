@@ -8,10 +8,11 @@
         <tr>
             <td>Số công văn</td>
             <td>Tiêu đề</td>
-            <td>duyệt</td>
+            <td>Duyệt</td>
         </tr>
         </thead>
         <tbody>
+
         @foreach($documents as $index => $document)
             <tr>
                 <td>{{ $document->document_code }}</td>

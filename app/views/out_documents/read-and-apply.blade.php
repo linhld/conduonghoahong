@@ -5,8 +5,8 @@
 
         <?php echo $document_body ?>
 
-            <button class="btn btn-success" type="submit" name="action" value="apply"> Chấp nhận</button>
-            <button class="btn btn-alert" type="submit" name="action" value="eject">từ chối</button>
+            <button class="btn xetduyet btn-success" type="submit" name="action" value="apply"> Chấp nhận</button>
+            <button class="btn btn-alert" type="submit" name="action" value="eject">Từ chối</button>
 
             {{ Form::token() }}
     </form>

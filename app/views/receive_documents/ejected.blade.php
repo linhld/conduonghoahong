@@ -8,7 +8,7 @@
         <tr>
             <td>Số công văn</td>
             <td>Tiêu đề</td>
-            <td>Sửa/ xóa</td>
+            <td>Sửa/ Xóa</td>
         </tr>
         </thead>
         <tbody>
@@ -25,7 +25,7 @@
                     <!-- show the nerd (uses the show method found at GET /nerds/{id} -->
 
                     <!-- edit this nerd (uses the edit method found at GET /nerds/{id}/edit -->
-                    <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">xem</a>
+                    <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">Xem</a>
 
                 </td>
             </tr>

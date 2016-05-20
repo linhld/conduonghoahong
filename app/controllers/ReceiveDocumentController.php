@@ -18,7 +18,7 @@ class ReceiveDocumentController extends BaseController {
 		  {
 		    if( $val == '' )
 		    {
-		    	Session::flash('global', 'vui lòng nhập thông tin đầy đủ');
+		    	Session::flash('global', 'Bạn vui lòng nhập thông tin đầy đủ !');
 
 		    	return Redirect::back()->withInput();
 		    }
@@ -51,7 +51,7 @@ class ReceiveDocumentController extends BaseController {
 		$receive_document->origin_document = $filename;
 		$receive_document->save();
 
-		Session::flash('global','Tạo Công văn thành công');
+		Session::flash('global','Tạo Công văn thành công !');
 		// load the view and pass the nerds
 		return Redirect::route('home');
 	}
@@ -74,7 +74,7 @@ class ReceiveDocumentController extends BaseController {
 		  {
 		    if( $val == '' )
 		    {
-		    	Session::flash('global', 'vui lòng nhập thông tin đầy đủ');
+		    	Session::flash('global', 'Bạn vui lòng nhập thông tin đầy đủ !');
 
 		    	return Redirect::back()->withInput();
 		    }
@@ -94,7 +94,7 @@ class ReceiveDocumentController extends BaseController {
 		//luu cong van den
 		$receive_document->save();
 
-		Session::flash('global','sửa Công văn thành công');
+		Session::flash('global','Bạn đã sửa Công văn thành công !');
 
 		return Redirect::route('home');
 	}
@@ -105,7 +105,7 @@ class ReceiveDocumentController extends BaseController {
 
 		$document->delete();
 
-		Session::flash('global','xóa Công văn thành công');
+		Session::flash('global','Bạn đã xóa Công văn thành công !');
 
 		return Redirect::route('home');
 	}
@@ -123,7 +123,7 @@ class ReceiveDocumentController extends BaseController {
 
 		if( !$query )
 		{
-			Session::flash('global','Vui lòng nhập vào ô tìm kiếm');
+			Session::flash('global','Vui lòng nhập vào ô tìm kiếm !');
 
 			return Redirect::back();
 		}
@@ -214,7 +214,7 @@ class ReceiveDocumentController extends BaseController {
 						$document_department->save();
 					}
 
-					Session::flash('global','xét duyệt thành công');
+					Session::flash('global','Đã xét duyệt thành công !');
 
 					$document->status = Config::get("document.receive_status")["applied"];
 					$document->save();
@@ -228,7 +228,7 @@ class ReceiveDocumentController extends BaseController {
 					$document->status = Config::get("document.receive_status")["ejected"];
 					$document->save();
 
-					Session::flash('global','từ chối Công văn thành công');
+					Session::flash('global','Đã từ chối Công văn thành công!');
 				}
 			break;
 
@@ -239,7 +239,7 @@ class ReceiveDocumentController extends BaseController {
 					$document->status = Config::get("document.receive_status")["sent_staff"];
 					$document->save();
 
-					Session::flash('global','Gửi Công văn thành công');
+					Session::flash('global','Phát hành Công văn thành công !');
 				}
 			break;
 
@@ -292,7 +292,7 @@ class ReceiveDocumentController extends BaseController {
 	public function sent_staff()
 	{
 		//
-		$data["documents"] = ReceiveDocument::get_documents('sent_staff');
+		$data["documents"] = Auth::user()->get_receive_applies_document();
 
 		return View::make('receive_documents.sent-staff', $data);
 	}

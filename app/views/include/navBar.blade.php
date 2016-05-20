@@ -12,7 +12,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">HOME</a>
+					<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,14 +27,14 @@
 					<!-- Menu danh cho Admin -->
 						<ul class="nav navbar-nav">
 							
-							<li><a href="{{ URL::route("users-index") }}">Quản lí tài khoản</a></li>
-							<li><a href="{{ URL::route("departments-index") }}">Quản lí phòng ban</a></li>
+							<li><a href="{{ URL::route("users-index") }}">Quản lý tài khoản</a></li>
+							<li><a href="{{ URL::route("departments-index") }}">Quản lý phòng ban</a></li>
 
 							<form class="navbar-form navbar-left" action="{{ URL::route('department-search') }}" method='get' role="search">
 								<div class="form-group">
-									<input type="text" name="query" class="form-control" placeholder="tìm kiếm phòng ban">
+									<input type="text" name="query" class="form-control" placeholder="Tìm kiếm phòng ban">
 								</div>
-								<button type="submit" class="btn btn-default">Tìm</button>
+								<button type="submit" class="btn btn-info">Tìm</button>
 							</form>
 						</ul>
 
@@ -42,7 +42,7 @@
 					<!-- Menu danh cho van thu -->
 					@elseif( $user_role == $config_role["writer"] )
 							<ul class="nav navbar-nav">
-								<li><a href="{{ URL::route("document-receive-create") }}">Soạn CV đến</a></li>
+								<li><a href="{{ URL::route("document-receive-create") }}">Nhập CV đến</a></li>
 								<li>
 									<a href="{{ URL::route("document-receive-waiting-apply") }}">CV đến đang chờ duyệt</a>
 									<br>
@@ -107,8 +107,8 @@
 					@endif
 
 					<ul class="nav navbar-nav navbar-right">
-						<li><a>{{ Auth::user()->name  }}</a></li>
-						<li><a href="{{ URL::route("user-sign-out") }}">Đăng xuất</a></li>
+						<li><a><span class="glyphicon glyphicon-user"></span> {{ Auth::user()->name  }}</a></li>
+						<li><a href="{{ URL::route("user-sign-out") }}"><span class="glyphicon glyphicon-off"></span> Đăng xuất</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

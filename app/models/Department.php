@@ -10,7 +10,7 @@ class Department extends Eloquent {
 	 * @var string
 	 */
 	protected $table = 'departments';
-
+	
 	public function get_staff_list()
 	{
 		return $this->hasMany('User','department','id');

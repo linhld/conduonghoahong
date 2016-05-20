@@ -32,7 +32,7 @@
                         <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read-and-send-staff", $document->id) }}">xem</a>
                         <!-- neu user la Giam doc thi hien nut Duyet hoac Tu choi -->
                     @else
-
+                        <a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">xem</a>
                     @endif
 
 

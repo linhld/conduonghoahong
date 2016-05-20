@@ -1,11 +1,11 @@
 @extends('layout.main')
 @section('content')
 
-    <h1>tìm kiếm Công văn đến</h1>
+    <h1>Tìm kiếm Công văn đến</h1>
 
    <form class="navbar-form navbar-left" action="{{ URL::route('document-receive-search') }}" method='post' role="search">
 		<div class="form-group">
-			<input type="text" name="query" class="form-control" placeholder="tìm kiếm công văn">
+			<input type="text" name="query" class="form-control" placeholder="Tìm kiếm công văn">
 			<select name="field">
 				<option value="document_code">Số CV</option>
 				<option value="title">Tiêu đề</option>
@@ -14,7 +14,7 @@
 		</div>
 		<button type="submit" class="btn btn-default">Tìm</button> 
 		<br>
-		 ( tìm theo ngày thì định dạng: 2016-05-25 )
+		 ( Tìm theo ngày theo định dạng: YY-MM-DD )
 	</form>
 
 	@if( !empty($documents) )
@@ -24,7 +24,7 @@
 			<tr>
 				<td>Số công văn</td>
 				<td>Tiêu đề</td>
-				<td>Sửa/ xóa</td>
+				<td>Sửa/ Xóa</td>
 			</tr>
 			</thead>
 			<tbody>
@@ -52,7 +52,7 @@
 
 						@endif
 
-						<a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">xem</a>
+						<a class="btn btn-small btn-info" href="{{ URL::route("document-receive-read", $document->id) }}">Xem</a>
 					</td>
 				</tr>
 			@endforeach
@@ -61,7 +61,7 @@
 
 	@else
 		<br><br>
-		<h2>không tìm thấy kết quả</h2>
+		<h2>Không tìm thấy kết quả</h2>
 	@endif
 
 	@endif

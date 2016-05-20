@@ -18,7 +18,7 @@ class OutDocumentController extends BaseController {
 		  {
 		    if( $val == '' )
 		    {
-		    	Session::flash('global', 'vui lòng nhập thông tin đầy đủ');
+		    	Session::flash('global', 'Bạn vui lòng nhập thông tin đầy đủ !');
 
 		    	return Redirect::back()->withInput();
 		    }
@@ -58,9 +58,10 @@ class OutDocumentController extends BaseController {
 		$origin_document->move($destinationPath, $filename);
 		//luu ten file
 		$out_document->origin_document = $filename;
+		$out_document->document_type = 100;
 		$out_document->save();
 
-		Session::flash('global','Tạo Công văn đi thành công');
+		Session::flash('global','Tạo Công văn đi thành công !');
 		// load the view and pass the nerds
 		return Redirect::route('home');
 	}
@@ -94,7 +95,7 @@ class OutDocumentController extends BaseController {
 		  {
 		    if( $val == '' )
 		    {
-		    	Session::flash('global', 'vui lòng nhập thông tin đầy đủ');
+		    	Session::flash('global', 'Bạn vui lòng nhập thông tin đầy đủ !');
 
 		    	return Redirect::back()->withInput();
 		    }
@@ -128,7 +129,7 @@ class OutDocumentController extends BaseController {
 
 		$document->delete();
 
-		Session::flash('global','xóa Công văn thành công');
+		Session::flash('global','Xóa Công văn thành công !');
 
 		return Redirect::route('home');
 	}
@@ -146,7 +147,7 @@ class OutDocumentController extends BaseController {
 
 		if( !$query )
 		{
-			Session::flash('global','Vui lòng nhập vào ô tìm kiếm');
+			Session::flash('global','Vui lòng nhập vào ô tìm kiếm !');
 
 			return Redirect::back();
 		}
@@ -216,6 +217,15 @@ class OutDocumentController extends BaseController {
 
 		switch($action){
 			case "accept":
+				foreach( Input::all() as $key => $val)
+				  {
+				    if( $val == '' )
+				    {
+				    	Session::flash('global', 'Bạn vui lòng nhập thông tin đầy đủ !');
+
+				    	return Redirect::back()->withInput();
+				    }
+				  }
 				//neu nhu status cua cong van nay la dang cho duyet thi moi thuc hien duyet cong van nay
 				if( $document->status == Config::get("document.out_status")["waiting_accept"] )
 				{
@@ -236,12 +246,12 @@ class OutDocumentController extends BaseController {
 					//luu cong van den
 					$document->save();
 
-					Session::flash('global','đã gửi lên chờ lãnh đạo phê  thành công');
+					Session::flash('global','Đã gửi lên chờ lãnh đạo phê  thành công !');
 				}
 			break;
 
 			case "no_accept":
-				Session::flash('global','đã từ chối công văn đi');
+				Session::flash('global','Đã từ chối công văn đi !');
 			break;
 
 			case "apply":
@@ -251,7 +261,7 @@ class OutDocumentController extends BaseController {
 					$document->status = Config::get("document.out_status")["applied"];
 					$document->save();
 
-					Session::flash('global','duyệt công văn đi thành công');
+					Session::flash('global','Duyệt công văn đi thành công !');
 				}
 			break;
 
@@ -262,7 +272,7 @@ class OutDocumentController extends BaseController {
 					$document->status = Config::get("document.out_status")["ejected"];
 					$document->save();
 
-					Session::flash('global','đã từ chối công văn đi');
+					Session::flash('global','Đã từ chối công văn đi !');
 				}
 			break;
 

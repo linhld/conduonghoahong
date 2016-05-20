@@ -10,7 +10,7 @@ class ReceiveDocument extends Eloquent {
 	 * @var string
 	 */
 	protected $table = 'receive_documents';
-
+	
 	public static function get_documents($status)
 	{
 		return self::where("status", Config::get('document.receive_status')[$status])->get();

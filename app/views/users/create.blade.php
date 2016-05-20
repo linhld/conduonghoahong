@@ -2,6 +2,7 @@
 @section('content')
 
 <form role="form" action="{{ URL::route('users-store') }}" method="post">
+     <div class="row row-centered">
 
     <div class="form-group">
         <label for="username">Tên đăng nhập:</label>
@@ -18,25 +19,25 @@
     </div>
 
     <div class="form-group">
-        <label for="password">email:</label>
+        <label for="password">Email:</label>
          <input class="form-control" type="name" name="email">
     </div>
 
     <div class="form-group">
-        <label for="password">ngày sinh:</label>
+        <label for="password">Ngày sinh:</label>
          <input class="form-control" type="date" name="birth_date">
     </div>
 
      <div class="form-group">
-        <label for="password">giới tính:</label>
+        <label for="password">Giới tính:</label>
          <select name="gender">
-                <option value="{{ Config::get('user.gender')['male'] }}">nam</option>
-                <option value="{{ Config::get('user.gender')['female'] }}">nữ</option>
+                <option value="{{ Config::get('user.gender')['male'] }}">Nam</option>
+                <option value="{{ Config::get('user.gender')['female'] }}">Nữ</option>
         </select>
     </div>
 
     <div class="form-group">
-        <label for="password">SDT:</label>
+        <label for="password">SĐT:</label>
          <input class="form-control" type="text" name="tel">
     </div>
 
@@ -56,12 +57,14 @@
                 <option value="{{ Config::get("user.role")["staff"] }}">Nhân viên</option>
                 <option value="{{ Config::get("user.role")["manager"] }}">Trưởng phòng</option>
                 <option value="{{ Config::get("user.role")["writer"] }}">Văn thư</option>
-                <option value="{{ Config::get("user.role")["chef"] }}">Giám đốc</option>
+                <option value="{{ Config::get("user.role")["chef"] }}">Lãnh đạo</option>
         </select>
     </div>
 
     <input class="btn btn-success" type="submit" value="Tạo tài khoản">
+
     {{ Form::token() }}
+    </div>
 </form>
 
 @endsection

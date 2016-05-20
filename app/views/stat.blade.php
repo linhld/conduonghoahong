@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
 
-    <h1>tìm kiếm Công văn đến</h1>
+    <h1>Thống kê Công văn đến</h1>
 
    <form class="navbar-form navbar-left" action="{{ URL::route('document-stat') }}" method='post' role="search">
 		<div class="form-group">
