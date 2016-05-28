@@ -193,14 +193,17 @@ class UserController extends BaseController {
 
 		if( $document == 'receive')
 		{
-			$result = ReceiveDocument::get_stat($start_date, $end_date, $document_type);
+			$documents = ReceiveDocument::get_stat($start_date, $end_date, $document_type);
 		}
 		else
 		{
-			$result = OutDocument::get_stat($start_date, $end_date, $document_type);
+			$documents = OutDocument::get_stat($start_date, $end_date, $document_type);
 		}
 
+		$result = $documents->count();
+
 		$data['report'] = "Có $result công văn.";
+		$data['documents'] = $documents;
 
 		Session::flash ("_old_input",Input::all() );
 

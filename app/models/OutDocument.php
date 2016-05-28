@@ -33,10 +33,10 @@ class OutDocument extends Eloquent {
 		//neu nhu type = 0, nghia la chua chon linh vuc, thi tim tat ca linh vuc
 		if ($document_type == 1 ) 
 			return self::whereBetween('time_send', array($start_date, $end_date) )
-					->count();
+					->get();
 
 		return self::whereBetween('time_send', array($start_date, $end_date) )
 					->where('document_type', $document_type)
-					->count();
+					->get();
 	}
 }
