@@ -59,11 +59,10 @@
 		<div class="row col-xs-8" style="padding-top:20px; padding-left: 30px">
 
 			@if (Session::has('global'))
-				<div   class="alert alert-info" style="color: #fcf8e3;
+				<div class="alert alert-info" style="color: #fcf8e3;
 	    												background-color: #2289E2;
-	    												border-color: #bce8f1;
-	    												margin-left: 550px;
-	    												margin-right: 550px">
+	    												border-color: #bce8f1;"
+	    												>
 						{{ Session::get('global') }}
 	             </div>
 			@endif

@@ -46,7 +46,8 @@ class OutDocumentController extends BaseController {
 		$out_document->status				= Config::get("document.out_status")["waiting_accept"];
 		//ghi lai xem cong van nay dpuoc gui boi nguoi nao
 		$out_document->send_by				= Auth::id();
-		// $out_document->send_by_department	= Auth::user()->department;
+		//ghi lai thong tin id cua department nao gui cv nay
+		$out_document->send_by_department	= Auth::user()->department;
 
 		//luu cong van den
 		//tai cong van goc len
