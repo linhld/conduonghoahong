@@ -1,4 +1,408 @@
-.row-centered {
+.clear{
+        clear:both;
+}
+
+.fixed{
+	position:fixed; top:0; left:0;
+	z-index:1;
+}
+
+.language_switcher{
+	font-size:11px;
+	position: absolute;
+	top: 0px;
+	right: 143px;
+	
+	}
+	.language_switcher div{
+		float:left;
+		margin-right:15px;
+		
+	}
+	.language_switcher img{
+		display:block;
+		margin:auto;
+	}
+	.language_switcher a{
+		text-decoration:none;
+		color:#858596;
+	}
+		.language_switcher a:hover{
+			background:white;
+		}
+#header{
+		text-align:center;
+		color:white;
+		position:relative;
+		background-image:url('img/bg-header2.png');
+		-moz-background-size:100% 100%;
+		-webkit-background-size:100% 100%;
+		background-size:100% 100%;
+		padding-bottom:20px;
+	}
+	#top-header{
+		width:100%;
+	}
+		#logo{
+			margin:50px auto;
+			color:#633001;
+			position:relative;
+		}
+			#warning img{
+				position:absolute;
+				top:30px;
+				left:40px;
+			}
+				#logo p img{
+					margin:auto;
+				}
+		#nav-menu{
+			margin:0 auto;
+			font-size:14px;
+			position:relative;
+		}
+			#nav-menu {
+				list-style:none;
+				background-color:#442419;
+			}
+			#nav-menu li{
+				display:inline-block;
+				margin-left:-4px;
+			}
+				
+				#nav-menu li a{
+					display: block;
+					text-indent: 0;
+					color:white;
+					padding:10px 22px;
+					background-color:#633001;
+				}
+					#nav-menu li a:hover{
+						background-color:#B18965;
+					}
+				.navMenu-selected{
+					background-color:white !important;
+					color:brown !important;
+				}
+
+		#search-box{
+			margin:30px 0;
+		}
+			#search-box form{
+				margin:auto;
+				display:inline;
+				position:relative;
+			}
+				#search-box input[name="query"]{
+					width:490px;
+					height:40px;
+					padding-left:10px;
+					border:1px solid #633001;
+					font-size:18px;
+					color:#633001;
+					box-shadow:inset 0 0 10px #B18965;
+					-moz-box-shadow:inset 0 0 10px #B18965;
+					-webkit-box-shadow:inset 0 0 10px #B18965;
+					background: transparent;
+				}
+				#search-box input[type="submit"]
+				{
+					background-image:url('../img/magnifier.png');
+					border:none;
+					background-color:transparent;
+					background-size: 100% 100%;
+					position: absolute;
+					width:	80px;
+					height: 80px;
+					right: -44px;
+					top: -22px;
+					cursor:pointer;
+				}
+					#search-box input[type="submit"]:hover{
+
+						-webkit-transform: scale(1.05,1.09);
+						-webkit-transition-timing-function: ease-out;
+						-webkit-transition-duration: 250ms;
+						-moz-transform: scale(1.05,1.09);
+						-moz-transition-timing-function: ease-out;
+						-moz-transition-duration: 250ms;
+						
+					}
+			#last-search{
+				width:500px;
+				font-size:13px;
+				margin: 20px auto;
+				word-break:break-all;
+				background:rgba(240, 235, 235,0.8);
+				padding:20px;
+				position:relative;
+				-webkit-border-radius: 20px;
+				border-radius: 20px;
+				-webkit-box-shadow: 3px 4px 15px 0px rgba(179, 50, 50, 0.86);
+				-moz-box-shadow:    3px 4px 15px 0px rgba(179, 50, 50, 0.86);
+				box-shadow: 3px 4px 15px 0px rgba(179, 50, 50, 0.86);
+			}
+				#last-search:after{
+					content: '';
+					display: block;
+					position: absolute;
+					top: -13px;
+					left: 47px;
+					width: 30px;
+					height: 30px; 
+					background: rgba(240, 235, 235,0.8);
+					-moz-transform: rotate(-135deg);
+					-webkit-transform: rotate(-135deg);
+					-webkit-box-shadow: 6px 6px 17px -7px rgba(176, 50, 50, 0.86);
+					-moz-box-shadow: 6px 6px 17px -7px rgba(176, 50, 50, 0.86);
+					box-shadow: 6px 6px 17px -7px rgba(176, 50, 50, 0.86);
+				}
+				#last-search span{
+					color:green;
+					float:left;
+					float:left;
+				}
+				#last-search a{
+					color:#a8a8a8;
+				}
+
+
+/* BOdy */
+.video-group{
+        display:block;
+        height:auto;
+}
+        .video-wrapper{
+                display:inline-block;
+                position:relative;
+                margin:1px;
+        }
+        .video-wrapper:hover{
+                cursor:pointer;
+                 -webkit-filter: grayscale(100%); 
+                color:red;
+                -webkit-transition:all 1s;
+        }
+
+                .video-wrapper img{
+                        width: 186px;
+						height: 230px;
+                }
+                .video-wrapper span{
+                        background:gray;
+                        color:white;
+                        position:absolute;
+                        width:100%;
+                        opacity:0.7;
+                        bottom:0px;
+                        left:0px;
+                        padding:6px 0px;
+                        text-align:center;
+						font-size: 12px;
+						min-height:30px;
+                }
+				 .duration{
+					position:absolute;
+					left:0px;
+					top:30px;
+					background-color:#b3b3b3;
+					opacity:0.7;
+				}
+.video-box{
+        width:960px;
+        background-color:#F8F8FF;
+        position:relative;
+}
+        .title{
+                text-align:center;
+                color:white;
+        }
+        .titleDetail{
+                background:green;
+                padding:5px 0px;
+        }
+        .title span{
+                cursor:pointer;
+                position:absolute;
+                top:0px;
+                right:0px;
+                background:red;
+                padding:0px 6px;
+        }
+                        .video-left{
+                                height:600px;
+                                width:740px;
+                                float:left;
+                        }
+                                .video-player{
+                                        width:100%;
+                                        height:460px;
+                                }
+                                        .video-player embed,object,iframe{
+                                                height:100%;
+                                                width:100%;
+                                        }
+                        .video-bottom{
+                                position:relative;
+                                margin-top:12px;
+                        }
+                                .video-share{
+                                        padding-top:20px;
+                                        margin-left:10px;
+                                        color:black;
+                                        border-top:solid 1px gray;
+                                        margin-top:5px;
+                                        float:left;
+                                        position:relative;
+                                        width:230px;
+                                }               
+                                                .video-share span{
+                                                        background:gray;
+                                                        padding:5px 5px;
+                                                        -webkit-border-radius: 40px;
+                                                        -moz-border-radius: 40px;
+                                                        border-radius: 40px;
+                                                        color:white;
+                                                        
+                                                }
+                                                .video-share input{
+                                                        position:absolute;
+                                                        top:40px;
+                                                        left:0px;
+                                                        height:30px;
+                                                        width:210px;
+                                                        margin-top:10px;
+                                                        transition: width 1s;
+                                                        -webkit-transition: width 1s; /* Safari */
+                                                        z-index:1;
+                                                }
+                                                        .video-share input:focus{
+                                                                width:400px;
+                                                        }
+                                                .video-zoom{
+                                                        background:gray;
+                                                        padding:5px 5px;
+                                                        color:white;
+                                                        position:absolute;
+                                                        top:20px;
+                                                        right:10px;
+                                                        cursor:pointer;
+                                                }
+                                                        .video-zoom:hover{
+                                                                background:red;
+                                                        }
+                                        .video-vote{
+                                                float:left;
+                                                color:black;
+                                                font-size:13px;
+                                        }
+                                                .video-vote p{
+                                                        text-align:center;
+                                                }
+                                                .video-vote ul{
+                                                        list-style:none;
+                                                        margin-top:-10px;
+                                                }
+                                                        .video-vote ul li{
+                                                                display:inline-block;
+                                                                position:relative;
+                                                                margin-left:12px;
+                                                        }
+                                                                .video-vote ul li img{
+                                                                        height:70px;
+                                                                        width:70px;
+                                                                        
+                                                                }
+
+                                                                .video-vote ul li span{
+                                                                        position:absolute;
+                                                                        top:30px;
+                                                                        left:30px;
+                                                                        font-size:22px;
+                                                                        color:white;
+                                                                }
+                                                        .video-vote  ul li:last-child img{
+                                                                height:100px;
+                                                                width:100px;
+                                                        }
+                                                        .video-vote ul li:last-child span{
+                                                                font-size:26px;
+                                                        }
+                        .video-right{
+                                width:210px;
+                                height:570px;
+                                float:right;
+                                overflow:auto;
+                        }
+
+	.pager{
+		background:#442419;
+        margin:0 auto;
+        width:100%;
+       padding: 10px 0px;
+        text-align:center;
+		}
+		
+		.pager a{
+			display: inline-block;
+			margin-right: 1px;
+			width: 30px;
+			height: 23px;
+			text-align: center;
+			color: #a1a7af;
+        }
+		.pager span,.pager a:hover{
+		
+			display: inline-block;
+			margin-right: 1px;
+			width: 30px;
+			height: 23px;
+			text-align: center;
+			color: #000;
+		
+			background: #9b5c0f; /* Old browsers */
+			background: -moz-linear-gradient(top,  #9b5c0f 0%, #f6f9b8 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b5c0f), color-stop(100%,#f6f9b8)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #9b5c0f 0%,#f6f9b8 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #9b5c0f 0%,#f6f9b8 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #9b5c0f 0%,#f6f9b8 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #9b5c0f 0%,#f6f9b8 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b5c0f', endColorstr='#f6f9b8',GradientType=0 ); /* IE6-9 */
+
+			border-radius: 5px 5px 5px 5px;
+			-moz-border-radius: 5px 5px 5px 5px;
+			-webkit-border-radius: 5px 5px 5px 5px;
+			border: 0px solid #000000;
+		}
+#footer{
+		background: #e6e6e6;
+		color: #858585;
+		font-size: 10px;
+		text-align: center;
+		padding: 15px 0 15px 0;
+}
+
+.col-centered{
     float: none;
     margin: 0 auto;
 }
+
+.category-select ul{
+	display: inline-block;
+	background-color: #DFDFDF;
+	padding:2px;
+	margin-right: 4px;
+}
+
+.category-select ul li{
+	display: inline-block;
+	padding: 5px;
+	background-color: green;
+	margin:3px;
+	color: white;
+}
+	.category-select li:hover{
+		background-color: white;
+		color: red;
+		cursor: pointer;
+	}
