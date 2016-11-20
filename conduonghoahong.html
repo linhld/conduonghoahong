@@ -5,56 +5,96 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/glyphicons.css">
-	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="slick/slick.css">
+
+	<link href="css/iconfont-style.css" rel="stylesheet">
+	<link href="css/style-startup.css" rel="stylesheet">
+	<link href="css/style-getlead.css" rel="stylesheet">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+    <link href="css/style-select.css" rel="stylesheet">
+ 
+	<script>
+		$(document).ready(function(){
+
+		  $('.top-carousel').slick({
+				mobileFirst: true,
+				infinite: true,
+				slidesToShow: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				prevArrow: false,
+				nextArrow: false
+		  });
+		});
+	</script>
 </head>
 <body>
 <div class="container-fluid">
-	<header>
-		<div class="row">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			    <li data-target="#myCarousel" data-slide-to="1"></li>
-			    <li data-target="#myCarousel" data-slide-to="2"></li>
-			    <li data-target="#myCarousel" data-slide-to="3"></li>
-			  </ol>
-
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
-			      <img src="img_chania.jpg" alt="Chania">
-			    </div>
-
-			    <div class="item">
-			      <img src="img_chania2.jpg" alt="Chania">
-			    </div>
-
-			    <div class="item">
-			      <img src="img_flower.jpg" alt="Flower">
-			    </div>
-
-			    <div class="item">
-			      <img src="img_flower2.jpg" alt="Flower">
-			    </div>
-			  </div>
-
-			  <!-- Left and right controls -->
-			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-
-		</div>
-	</header>
 
 
-	<div class="" id="register-form-wrap">
+	
+     <div class="getlead">
+
+        <!-- =========================
+            HEADER 
+        ============================== -->
+        <header id="nav3-1">
+            
+            <nav class="navbar navMenuCollapse">
+            <!-- navbar fixed on top: -->
+            <!--  
+                <nav class="navbar navbar-fixed-top" id="main-navbar" role="navigation">
+            -->
+            <!-- navbar static: -->
+            <!--
+                <nav class="navbar navbar-static-top" id="main-navbar" role="navigation">
+            -->
+            <!-- background transparent: -->
+            <!--
+                <nav class="navbar navbar-fixed-top bg-transparent" id="main-navbar" role="navigation">
+            -->
+            
+                <div class="container">
+                    <!-- Call Us -->
+                    <div class="col-md-4 hidden-sm hidden-xs text-left nav-3cols nav-callus p-l-0">
+                        Liên hệ <span class="phone-number"> 01679.001.005 </span>
+                    </div>
+                    <!-- Logo -->
+                    <div class="col-md-4 col-xs-6 nav-3cols-logo">
+                        <img src="images/logo-black.png" alt="">
+                        <!-- Logo for Background Transparent  -->
+                        <!--
+                            <img class="logo-black" src="images/logo-black.png" alt="">
+                            <img class="logo-white" src="images/logo-white.png" alt="">
+                        -->
+                    </div>
+                    <!-- Social Buttons -->
+                    <div class="col-md-4 col-xs-6 nav-3cols text-right">
+                        <div class="social-btn">
+                            <span class="text-edit m-r">Kết nối</span>
+                            <a href="" class="sb-facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="" class="sb-twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="" class="sb-youtube hidden-xs"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div><!-- /End Container -->
+            </nav><!-- /End Nav -->
+        </header>
+
+
+        </div>
+    
+
+
+
+
+	<!-- vui long de lai thong tin -->
+	<div class="row" id="register-form-wrap">
 		<div class="opacity-class">
 			<div class="row" id="register-form">
 				<div class="col-xs-8 col-centered">
@@ -166,8 +206,806 @@
 		</div>
 	</div>
 
+	<div class="card-item donhang">
+	<div class="row">
+
+	<div class="col-xs-10 col-lg-10 col-centered">
+		<div class="row">
+			<div class="col-xs-12 col-lg-4 donhang-group">
+
+			<h3>NHẬT BẢN</h3>
+			<div id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingOne">
+				      <h5 class="mb-0">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Tuyển 3 công nhân nam tại nhà máy dệt may, lương cao
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top img-fluid" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingTwo">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingThree">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Collapsible Group Item #3
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+			
+			</div>
+	      	</div>
+	      </div>
+	      </div>
+
+	      <div class="col-xs-12 col-lg-4 donhang-group">
+
+			<h3>ĐÀI LOAN</h3>
+			<div id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingOne">
+				      <h5 class="mb-0">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Tuyển 3 công nhân nam tại nhà máy dệt may, lương cao
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top img-fluid" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingTwo">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingThree">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Collapsible Group Item #3
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+			
+			</div>
+	      	</div>
+	      </div>
+	      </div>
 
 
+
+
+
+	      <div class="col-xs-12 col-lg-4 donhang-group">
+
+			<h3>DU HỌC</h3>
+			<div id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingOne">
+				      <h5 class="mb-0">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Tuyển 3 công nhân nam tại nhà máy dệt may, lương cao
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top img-fluid" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingTwo">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingThree">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Collapsible Group Item #3
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+			
+			</div>
+	      	</div>
+	      </div>
+	      </div>
+
+	    </div>
+
+	   
+	    <div class="row">
+	      <div class="col-xs-12 col-lg-4 donhang-group">
+
+			<h3>VIỆC LÀM TRONG NƯỚC</h3>
+			<div id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingOne">
+				      <h5 class="mb-0">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Tuyển 3 công nhân nam tại nhà máy dệt may, lương cao
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top img-fluid" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingTwo">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingThree">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Collapsible Group Item #3
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+			
+			</div>
+	      	</div>
+	      </div>
+	      </div>
+
+	      <div class="col-xs-12 col-lg-4 donhang-group">
+
+			<h3>SINGAPORE</h3>
+			<div id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingOne">
+				      <h5 class="mb-0">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Tuyển 3 công nhân nam tại nhà máy dệt may, lương cao
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top img-fluid" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingTwo">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingThree">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Collapsible Group Item #3
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+			
+			</div>
+	      	</div>
+	      </div>
+	      </div>
+
+
+	      <div class="col-xs-12 col-lg-4 donhang-group">
+
+			<h3>CÁC NƯỚC KHÁC</h3>
+			<div id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingOne">
+				      <h5 class="mb-0">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Tuyển 3 công nhân nam tại nhà máy dệt may, lương cao
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top img-fluid" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingTwo">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="card-block">
+				        <div class="card-header">
+						            This is a card header
+						        </div>
+						        <img class="card-img-top" src="http://placekitten.com/500/200">
+						        <div class="card-block">
+						            <h4 class="card-title">Card title</h4>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Hạn nộp hồ sơ</span>17/11/2016</h6>
+						            <br>
+						            <h6 class="card-subtitle text-muted"><span class="tag tag-success">Dự kiến thi tuyển</span>22/11/2016</h6>
+						            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						            <ul class="list-group list-group-flush">
+						                <li class="list-group-item">Tên công ty</li>
+						                <li class="list-group-item">Dapibus ac facilisis in</li>
+						                <li class="list-group-item">Vestibulum at eros</li>
+						            </ul>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="card-link">Card link</a>
+						            <a href="#" class="card-link">Another link</a>
+						        </div>
+						        <div class="card-block">
+						            <a href="#" class="btn btn-primary">Đăng kí ứng tuyển</a>
+						        </div>
+						        <div class="card-footer text-muted">
+						            This is a card footer
+						        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingThree">
+				      <h5 class="mb-0">
+				        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Collapsible Group Item #3
+				        </a>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+			
+			</div>
+	      	</div>
+	      </div>
+	      </div>
+
+
+	    </div>
+
+	      </div>
+	     </div>
+
+    </div>
+  </div>
+
+
+			<article>
+				<div class="row">
+					<div class="top-carousel">
+					  <div class="text-center" style="background: url('img/c1.jpg')"></div>
+					  <div class="text-center" style="background: url('img/c2.jpeg')"></div>
+					  <div class="text-center" style="background: url('img/c3.jpg')"></div>
+					</div>
+				</div>
+			</article>
+
+		    </div>
+		</div>
+	</div>
+	</div>
+
+
+
+     <div class="getlead">
+
+
+        <!-- =========================
+           FEATURES SECTION 
+        ============================== -->
+        <section id="features4-1" class="p-y-lg bg-edit">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-header text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <h2 class="wow animated" style="visibility: visible;">Dịch vụ nhân lực</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At rerum odio eum. Tempore eum provident consectetur unde, iure. Unde nemo culpa nulla.</p>    
+                        </div>
+                    </div>
+                </div>
+                <!-- Features Row -->
+                <div class="row features-block wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="col-md-10 col-md-offset-1 c2">
+                        <div class="col-sm-6 img-left clearfix"> 
+                            <img src="images/flat1.png" alt="">
+                            <h5 class="m-t f-w-900">Tư vấn XKLĐ, du học</h5>
+                            <p>Odit non officiis vitae eaque quo temporibus blanditiis excepturi facilis, dolore provident et eligendi ut asperiores perferendis, maxime optio tempora.</p>
+                        </div>
+                        <div class="col-sm-6 img-left clearfix"> 
+                            <img src="images/flat3.png" alt="">
+                            <h5 class="m-t f-w-900">Hỗ trợ nguồn nhân lực XKLĐ trong nước</h5>
+                            <p>Omnis nam quibusdam fugiat consectetur quasi iste, aspernatur eaque doloremque, magni dolores deserunt impedit fugit error consequuntur esse.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Features Row -->
+                <div class="row features-block wow fadeIn new-row-sm" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="col-md-10 col-md-offset-1 c2">
+                        <div class="col-sm-6 img-left clearfix"> 
+                            <img src="images/flat2.png" alt="">
+                            <h5 class="m-t f-w-900">Head-hunter cho công ty trong nước</h5>
+                            <p>Neque iure, illum consequatur quidem laudantium veritatis labore fuga inventore totam, at quos deserunt quae expedita aliquam, perspiciatis saepe.</p>
+                        </div>
+                        <div class="col-sm-6 img-left clearfix"> 
+                            <img src="images/flat4.png" alt="">
+                            <h5 class="m-t f-w-900">Hỗ trợ nguồn nhân lực XKLĐ quốc tế</h5>
+                            <p>Deserunt impedit fugit error consequuntur esse, deleniti libero aspernatur ad assumenda, laudantium saepe similique facere eaque.</p>
+                        </div>
+                    </div>
+                </div><!-- /End Features Row -->
+
+            </div><!-- /End Container -->
+        </section>   
+  
+
+        </div>
+    
+
+
+	<!-- STEPS LEFT BLOCK 2 -->
+	<div class="select-main">
+    
+    	<!-- STEPS LEFT BLOCK -->
+		<section id="steps-left">
+			<div class="container">
+                <div class="sep-bottom">
+                    <h2>Thủ tục đi Xuất khẩu lao động như thế nào?</h2>
+                    <p class="desc-text editContent">Dưới đây là các bước để bạn có thể làm việc tại các nước như Nhật Bản, Đài Loan và các nước khác.<br>
+    					Quy trình này có thể thay đổi ít nhiều phụ thuộc vào tình trạng đơn hàng và từng thời điểm.
+    					<br>
+    					Các bạn để lại số điện thoại và cán bộ tư vấn sẽ gọi lại tư vấn cho bạn rõ hơn.
+    				</p>
+
+                </div>			
+                
+                <ul class="step-left-block">
+                    <li>
+                        <div class="step-num">1</div>
+                        <div class="step-img"><img src="img/step1.png" class="screen" alt=""></div>              
+                        <div class="step-text">
+                            <h3 class="title">Tư vấn và khám sức khỏe</h3>
+                            <p>Tại văn phòng công ty, người lao động được tư vấn cụ thể về công việc sẽ làm theo hợp đồng sẽ làm việc sau khi nhập cảnh tại Nhật Bản, mức thu nhập, chế độ phúc lợi, nhà ở, điện nước, sinh hoạt,... Được giải đáp các thắc mắc về luật lao động, việc làm thêm giờ và các vấn đề khác.
+                            </p>
+							<p>- Thông báo lịch trình nộp hồ sơ, thi tuyển, đào tạo sau trúng tuyển, các bước chi phí, tài chính, nhập cảnh,...
+							</p>
+							<p>- Hướng dẫn đi khám sức khỏe tại bệnh viện công ty chỉ định.</p>
+							<p>- Hướng dẫn hoàn thiện đầy đủ hồ sơ để tham gia chương trình.
+							</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-num">2</div>
+                        <div class="step-img"><img src="img/step2.png" class="screen" alt=""></div>
+                        <div class="step-text">
+                            <h3 class="title">Nộp hồ sơ, khai form thông tin</h3>
+                            <p>
+                            	<b>Nếu đạt yêu cầu và đủ điều kiện tham gia chương trình, người lao động hoàn thiện hồ sơ nộp tại công ty.</b>
+                            </p>
+                            <p> Khai form thông tin (theo mẫu của công ty) đăng ký tham gia thi tuyển
+                            </p>
+                            <p>- Nộp tiền đặt cọc thi tuyển (đảm bảo không bỏ thi, chấp hành đúng nội quy công ty đưa ra) khoảng 5-10 triệu.
+							</p>
+							<p>- Nộp các giấy tờ cần thiết như : SYLL công chứng, giấy khai sinh, bằng cấp...
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-num">3</div>
+                        <div class="step-img"><img src="img/step3.png" class="screen" alt=""></div>  
+                        <div class="step-text">
+                            <h3 class="title">Thi tuyển</h3>
+                            <p>Tùy thuộc vào đơn hàng, hình thức thi tuyển sẽ có thể là gọi video qua mạng hoặc thi tuyển trực tiếp.
+                            </p>
+                            <p>
+                            Thi tuyển trực tiếp cũng rất đa dạng và có thể bao gồm kiểm tra tay nghề.
+                            Ứng viên đỗ đơn hàng sẽ được yêu cầu đặt cọc 1 khoản từ 20 triệu để đảm bảo sẽ bay.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-num">4</div>
+                        <div class="step-img"><img src="img/step4.png" class="screen" alt=""></div>
+                        <div class="step-text">
+                            <h3 class="title">Học tiếng, làm Visa và thủ tục xuất cảnh</h3>
+                            <p>
+                            	Ứng viên sau khi đỗ sẽ phải vào trung tâm học tiếng và các kĩ năng cần thiết tại trung tâm đào tạo riêng.
+                            </p>
+                            <p>
+                            	Công ty sẽ hỗ trợ từ A-Z các thủ tục và bạn chỉ việc chờ đến ngày bay.
+                            </p>
+                       			<p>
+                       			Thời gian bay dự kiến sẽ được nói rõ trong hợp đồng khi bạn kí với công ty
+                       			</p>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                
+			</div>
+		</section>
+
+
+
+
+		    	<!-- COUNTER 4 COL BLOCK -->
+    	<div class="select-main">
+		<section id="counter-4col" class="facts-block text-center cover-bg" style="background-image:url(img/bg5.jpg)">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<i class="icon icon-download"></i>
+						<h3 class="timer">3</h3>
+						<h4>con số trung tâm đang hướng tới tại VN là TOP 3 trong lĩnh vực XKLD</h4>
+					</div>
+					<div class="col-md-3">
+						<i class="icon icon-wallet2"></i>
+						<h3 class="timer">63</h3>
+						<h4>đơn hàng tổ chức thi tuyển</h4>
+					</div>
+					<div class="col-md-3">
+						<i class="icon icon-target2"></i>
+						<h3 class="timer">749</h3>
+						<h4>hồ sơ đăng kí thi tuyển</h4>
+					</div>
+					<div class="col-md-3">
+						<i class="icon icon-heart2"></i>
+						<h3 class="timer">245</h3>
+						<h4>bạn TTS, XKLD và du học sinh đã xuất cảnh</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+    	</div>
+    
+    </div>
 </div>
 </body>
 </html>

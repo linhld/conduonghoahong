@@ -16,6 +16,15 @@
     margin: 0 auto;
 }
 
+.top-carousel div{
+  background: no-repeat center center fixed ; 
+  background-position: center !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
 #register-form-wrap{
   background-image: url("../img/bg-register-form.jpg");
   background-size:  cover;
@@ -57,3 +66,10 @@
       background: none;
     }
     
+.donhang{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+  .donhang .donhang-group{
+    margin-top:40px;
+  }
