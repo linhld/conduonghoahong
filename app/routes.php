@@ -17,15 +17,3 @@ Route::get('/',
 		'uses' => 'HomeController@index'
 	)
 );
-
-Route::post('/filter', 
-	array('as' => 'home',
-		'uses' => 'HomeController@filter'
-	)
-);
-
-Route::post('/detail', 
-	array('as' => 'home',
-		'uses' => 'HomeController@detail'
-	)
-);
