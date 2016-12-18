@@ -18,8 +18,14 @@ Route::get('/',
 	)
 );
 
-Route::get('/get/{id}', 
+Route::post('/filter', 
 	array('as' => 'home',
-		'uses' => 'HomeController@get_video'
+		'uses' => 'HomeController@filter'
+	)
+);
+
+Route::post('/detail', 
+	array('as' => 'home',
+		'uses' => 'HomeController@detail'
 	)
 );

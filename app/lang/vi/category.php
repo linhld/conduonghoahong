@@ -63,6 +63,7 @@ return array(
 		'lenlut' 	=> 'lén lút',
 		'baodam' 	=> 'bạo dâm',
 		'cotrang'	=> 'cổ trang',
-		'scandal'	=> 'scandal'
+		'scandal'	=> 'scandal',
+		'hangxom'	=> 'hàng xóm'
 	]
 );

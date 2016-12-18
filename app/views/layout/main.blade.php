@@ -4,7 +4,6 @@
 	@include('include/head')
 </head>
 <body>
-
 	@yield('content')
 
 	@include('include/footer')

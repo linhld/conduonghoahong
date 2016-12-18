@@ -1,76 +1,205 @@
 @extends('layout.main')
 @section('content')
-<div class="row">
-	<div class="category-select col-centered col-xs-10">
-		<?php $config_category = Config::get('category.id') ?>
-		<?php $lang_category	= Lang::get('category') ?>
-		<p>Bấm vào các thể loại bạn KHÔNG MUỐN XEM để lọc danh sách video, hệ thống cũng sẽ lưu lại tùy chọn này cho lần sau</p>
-		<div class="row">
-			<ul class="col-xs-2">
-				<span>Quốc gia: </span>
-				@foreach($lang_category["quocgia"] as $kihieu => $quocgia)
-				<li id="{{ $lang_category['quocgia'][$kihieu] }}">
-					{{ $lang_category['quocgia'][$kihieu] }}
-				</li>
-				@endforeach
-			</ul>
-			<ul class="col-xs-3">
-				<span>Kiểu quay: </span>
-				@foreach($lang_category["kieuquay"] as $kihieu => $kieuquay)
-				<li id="{{ $lang_category['kieuquay'][$kihieu] }}">
-					{{ $lang_category['kieuquay'][$kihieu] }}
-				</li>
-				@endforeach
-			</ul>
-			<ul class="col-xs-1">
-				<span>Kiểu chơi: </span>
-				@foreach($lang_category["kieuchoi"] as $kihieu => $kieuchoi)
-				<li id="{{ $lang_category['kieuchoi'][$kihieu] }}">
-					{{ $lang_category['kieuchoi'][$kihieu] }}
-				</li>
-				@endforeach
-			</ul>
-			<ul class="col-xs-2">
-				<span>Mẫu người: </span>
-				@foreach($lang_category["maunguoi"] as $kihieu => $maunguoi)
-				<li id="{{ $lang_category['maunguoi'][$kihieu] }}">
-					{{ $lang_category['maunguoi'][$kihieu] }}
-				</li>
-				@endforeach
-			</ul>
-			<ul class="col-xs-3">
-				<span>Thể loại: </span>
-				@foreach($lang_category["theloai"] as $kihieu => $theloai)
-				<li id="{{ $lang_category['theloai'][$kihieu] }}">
-					{{ $lang_category['theloai'][$kihieu] }}
-				</li>
-				@endforeach
-			</ul>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-centered col-xs-10">
-		<div class="clear"></div>
-		<div class="content">
-			@foreach( $videos as $index => $video )
-			@if( $index % 5 == 0)
-				<div class="clear"></div>
-				<div class="video-group">
-			@endif
-			<div class="video-wrapper" id="{{ $video->id }}">
-				<img src="{{ $video->thumbnail }}"/>
-				<span>{{ $video->titleV }}</span>
-				<div class="duration">
-					{{ $video->duration }}</div>
+<div class="getlead">
+
+        <!-- =========================
+            HEADER 
+        ============================== -->
+        <header id="nav3-1">
+            
+            <nav class="navbar navMenuCollapse">
+            
+                <div class="container">
+                    <!-- Call Us -->
+                    <div class="col-md-4 hidden-sm hidden-xs text-left nav-3cols nav-callus p-l-0">
+                        Liên hệ <span class="phone-number"> 01679.001.005 </span>
+                    </div>
+                    <!-- Logo -->
+                    <div class="col-md-4 col-xs-6 nav-3cols-logo">
+						<h3>CONDUONGHOAHONG HUMAN RESOURCE</h3>
+                    </div>
+
+                </div><!-- /End Container -->
+            </nav><!-- /End Nav -->
+        </header>
+        </div>
+    
+
+	<!-- vui long de lai thong tin -->
+	<div class="row" id="register-form-wrap">
+		<div class="opacity-class">
+			<div class="row" id="register-form">
+				<div class="col-xs-8 col-centered">
+					<legend>Vui lòng để lại thông tin, khi có đơn hàng phù hợp chúng tôi sẽ gọi lại cho bạn</legend>
+					<div class="row">
+						<form class="well form-horizontal" action="index.php" method="post"  id="contact_form">
+						<fieldset>
+
+						<!-- Nhom thong tin-->
+
+						<div class="col-xs-10 col-lg-4">
+
+								<div class="form-group"> 
+								  <div class="input-group">
+								  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								  <input  name="first_name" placeholder="Họ và tên" class="form-control"  type="text">
+								    </div>
+								</div>
+
+								<!-- Text input-->
+
+								<div class="form-group">
+								
+								    <div class="input-group">
+									  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									  <input name="last_name" placeholder="Tuổi + Nơi ở hiện tại" class="form-control"  type="text">
+								    </div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">  
+								 
+								    <div class="input-group">
+								        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+								  	<input name="email" placeholder="Số điện thoại" class="form-control"  type="text">
+								   </div>
+								</div>
+						</div>
+
+						<!-- Nhom dia chi nghe nghiep-->
+						<div class="col-xs-10 col-lg-4">
+
+								<div class="form-group">
+								
+								    <div class="input-group">
+								        <span class="input-group-addon"><i class="glyphicon glyphicon-scale"></i></span>
+								  	<input name="phone" placeholder="Chiều cao, cân nặng" class="form-control" type="text">
+								  	</div>
+								   
+								</div>
+
+								<!-- Text input-->
+								      
+								<div class="form-group">
+								 
+								    <div class="input-group">
+								        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								  <input name="address" placeholder="Nghề nghiệp hiện tại" class="form-control" type="text">
+								  </div>
+								</div>
+
+								<!-- Text input-->
+								 
+								<div class="form-group">
+									<div class="input-group">
+								        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+								  <input name="city" placeholder="Muốn đi đơn hàng ntn" class="form-control"  type="text">
+								   	</div>
+								</div>
+						</div>
+
+
+						<!-- Text input-->
+						<div class="col-xs-10 col-lg-4">
+								<div class="form-group">
+								  
+								    <div class="input-group">
+								        <span class="input-group-addon"><i class="glyphicon glyphicon-plane"></i></span>
+								  		<input name="zip" placeholder="Nước bạn muốn đi" class="form-control"  type="text">
+								 	</div>
+								</div>
+
+						</div>
+
+						<div class="col-xs-10 col-lg-4">
+								<div class="form-group">
+								  
+								    <div class="input-group">
+								        <span class="input-group-addon"><i class="glyphicon glyphicon-education"></i></span>
+								  		<input name="degree" placeholder="Trình độ học vấn cao nhất" class="form-control"  type="text">
+								 	</div>
+								</div>
+
+						</div>
+
+						<!-- Button -->
+						<div class="form-group">
+						  <div class="col-md-4 text-center">
+						    <button type="submit" class="btn btn-warning">GỬI <span class="glyphicon glyphicon-send"></span></button>
+						  </div>
+						</div>
+
+						</fieldset>
+						</form>
+					</div>
 				</div>
-			@if( $index % 5 == 4)
-			</div>
-			@endif
-			@endforeach
-			<div class="pager">
+
 			</div>
 		</div>
 	</div>
-</div>
+
+	<div class="col-xs-10 col-lg-10 col-centered">
+		<div class="item-wrapper">
+	  <div class="row">
+		  <div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">NHẬT BẢN</div>
+				<div class="panel-body">
+					<ul class="list-group">
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">ĐÀI LOAN</div>
+				<div class="panel-body">
+					<ul class="list-group">
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">SINGAPORE</div>
+				<div class="panel-body">
+					<ul class="list-group">
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	  </div>
+		</div>
+	</div>
 @endsection
