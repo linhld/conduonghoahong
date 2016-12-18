@@ -13,32 +13,31 @@ class CreateDonhangxkldTable extends Migration {
 		Schema::create('donhangxkld', function($table)
 		{
 			$table->increments('id');
-			$table->date('hannophoso')->nullable();
-			$table->string('soluongcantuyen')->nullable();
-			$table->integer('gioitinh')->nullable();
-			$table->integer('dotuoibatdau')->nullable();
-			$table->integer('dotuoiketthuc')->nullable();
-			$table->integer('chieucao')->nullable();
-			$table->integer('cannang')->nullable();
-			$table->integer('trinhdo')->nullable();
-			$table->integer('tinhtranghonnhan')->nullable();
-			$table->integer('nghetuyen')->nullable();
-			$table->integer('ngoaingu')->nullable();
-			$table->integer('thoigianhopdong')->nullable();
+			$table->date('hannophoso');
+			$table->string('soluongcantuyen');
+			$table->integer('gioitinh');
+			$table->integer('dotuoibatdau');
+			$table->integer('dotuoiketthuc');
+			$table->integer('chieucao');
+			$table->integer('cannang');
+			$table->integer('trinhdo');
+			$table->integer('tinhtranghonnhan');
+			$table->integer('nghetuyen');
+			$table->integer('ngoaingu');
+			$table->integer('thoigianhopdong');
 
-			$table->integer('loaihinhthoigian')->nullable();
-			$table->string('luongthuclinh')->nullable();
-			$table->string('luonghopdong')->nullable();
-			$table->integer('tangca')->nullable();
+			$table->integer('loaihinhthoigian');
+			$table->string('luongthuclinh');
+			$table->string('luonghopdong');
+			$table->integer('tangca');
 
-			$table->date('thoigiansotuyen')->nullable();
-			$table->date('thoigianthituyen')->nullable();
-			$table->string('hannophoso')->nullable();
+			$table->date('thoigiansotuyen');
+			$table->date('thoigianthituyen');
 
-			$table->string('dukienxuatcanh')->nullable();
+			$table->string('dukienxuatcanh');
 
-			$table->string('tencongty')->nullable();
-			$table->string('diachi')->nullable();
+			$table->string('tencongty');
+			$table->string('diachi');
 			$table->timestamps();
 		});
 	}
