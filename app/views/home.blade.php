@@ -138,6 +138,27 @@
 		</div>
 	</div>
 
+	<?php
+		$donhangxkld = Donhangxkld::all();
+		$idquocgia = Config::get('donhangxkld.quocgia_attr');
+
+		$donHangNhatBan = $donhangxkld->filter(function ($donhangxkld) use ($idquocgia){
+											return $donhangxkld->quocgia == 1;
+										});
+		
+							
+
+		$donHangDaiLoan = $donhangxkld->filter(function ($donhangxkld) use ($idquocgia){
+											return $donhangxkld->quocgia == 2;
+										});
+								
+
+		$donHangSingapore = $donhangxkld->filter(function ($donhangxkld) use ($idquocgia){
+											return $donhangxkld->quocgia == $idquocgia['singapore'];
+										});
+
+	?>
+
 	<div class="col-xs-10 col-lg-10 col-centered">
 		<div class="item-wrapper">
 	  <div class="row">
@@ -146,21 +167,9 @@
 				<div class="panel-heading">NHẬT BẢN</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						@foreach( $donHangNhatBan as $donhang )
+						<li class="list-group-item" job-id="1">{{ $donhang->tenngan }}
+						@endforeach</li>
 					</ul>
 				</div>
 			</div>
@@ -170,14 +179,9 @@
 				<div class="panel-heading">ĐÀI LOAN</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						@foreach( $donHangDaiLoan as $donhang )
+						<li class="list-group-item" job-id="1">{{ $donhang->tenngan }}
+						@endforeach</li>
 					</ul>
 				</div>
 			</div>
@@ -187,14 +191,9 @@
 				<div class="panel-heading">SINGAPORE</div>
 				<div class="panel-body">
 					<ul class="list-group">
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
-						<li class="list-group-item" job-id="1">Tuyển 3 công nhân tai Ibaraki lương cao</li>
+						@foreach( $donHangSingapore as $donhang )
+						<li class="list-group-item" job-id="1">{{ $donhang->tenngan }}
+						@endforeach</li>
 					</ul>
 				</div>
 			</div>

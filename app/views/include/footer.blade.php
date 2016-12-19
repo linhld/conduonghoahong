@@ -1,9 +1,9 @@
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 
-<script src="js/jquery.min.js"></script>
+<script src="{{ asset('js/jquery.min.js') }}"></script>
 
-<script src="js/jQuery.scrollTo.min.js"></script>
-<script src="js/conduonghoahong.js"></script>
+<script src="{{ asset('js/jQuery.scrollTo.min.js') }}"></script>
+<script src="{{ asset('js/conduonghoahong.js') }}"></script>
 
   <!-- jQuery library (served from Google) -->
 <script>

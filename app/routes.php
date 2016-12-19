@@ -17,3 +17,16 @@ Route::get('/',
 		'uses' => 'HomeController@index'
 	)
 );
+
+Route::get('/donhangxkld/create', 
+	array('as' => 'donhangxkld.create',
+		'uses' => 'DonhangxkldController@create'
+	)
+);
+
+Route::post('/donhangxkld/create', 
+	array('as' => 'donhangxkld.store',
+		'uses' => 'DonhangxkldController@store'
+	)
+);
+

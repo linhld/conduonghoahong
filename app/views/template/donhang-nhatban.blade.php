@@ -21,11 +21,11 @@
 							<th><span class="text-normal">Độ tuổi</span>: 20 - 27 tuổi </th>
 						</tr>
 						<tr>
-							<th><span class="text-normal">Chiểu cao</span>: 160cm</th>
-							<th><span class="text-normal">Cân nặng</span>: 50kg</th>
+							<th><span class="text-normal">Chiểu cao</span>: $item["chieucao"] cm</th>
+							<th><span class="text-normal">Cân nặng</span>:  $item["cannang"] kg</th>
 						</tr>
 						<tr>
-							<th><span class="text-normal">Trình độ chuyên môn</span>: Cấp 3 trở lên</th>
+							<th><span class="text-normal">Trình độ chuyên môn</span>:  $item["trinhdo"] trở lên</th>
 							<th><span class="text-normal">Tình trạng hôn nhân</span>: Không yêu cầu</th>
 						</tr>
 						<tr>

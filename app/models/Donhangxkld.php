@@ -1,7 +1,7 @@
 <?php
 
 
-class DocumentDepartment extends Eloquent {
+class Donhangxkld extends Eloquent {
 
 
 	/**
@@ -9,9 +9,9 @@ class DocumentDepartment extends Eloquent {
 	 *
 	 * @var string
 	 */
-	protected $table = 'document_department';
+	protected $table = 'donhangxkld';
 
-	
+	protected $guarded = ['id'];
 
 	public $timestamps = false;
 }
